@@ -1,8 +1,8 @@
 # Eval Tape
 
-X bot for **@evaltape** — posts when a real LLM ships, then again when independent evals land.
+X bot for **@evaltape** — first to know when a real LLM ships, then again when independent evals land.
 
-**Bio:** Frontier + open-weight drops + independent evals. No vendor scorecards.
+**Bio:** First to know when a real LLM ships. Then when independent evals land. Frontier + open weights. No vendor scorecards.
 
 Two post types only: **SHIPPED** and **EVALS**.
 
