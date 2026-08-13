@@ -76,7 +76,7 @@ LABS: tuple[Lab, ...] = (
         kind="closed",
         aliases=("microsoft", "azure", "phi"),
         hf_orgs=("microsoft",),
-        rss_urls=("https://blogs.microsoft.com/ai/feed/",),
+        rss_urls=("https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/bg-p/AzureAIBlogs/rss",),
     ),
     Lab(
         key="meta",
@@ -84,7 +84,7 @@ LABS: tuple[Lab, ...] = (
         kind="open",
         aliases=("meta", "llama", "meta-llama"),
         hf_orgs=("meta-llama",),
-        rss_urls=("https://ai.meta.com/blog/rss/",),
+        rss_urls=("https://about.fb.com/news/feed/",),
     ),
     Lab(
         key="deepseek",

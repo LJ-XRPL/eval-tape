@@ -21,7 +21,7 @@ from src.captions import (
 from src.cards import render_evals_card, render_ranked_evals_card, render_shipped_card
 from src.config import LAB_BY_KEY, OUT_DIR, BATCH_EVALS_PHOTOS
 from src.detect import detect_candidates, seed_seen_from_current
-from src.evals import fetch_aa_models, find_new_evals
+from src.evals import fetch_aa_models, find_new_evals, models_awaiting_evals
 from src.post import dry_run_enabled, post_with_media
 from src.state import load_state, mark_evals_posted, record_post, remaining_posts_today, save_state, upsert_shipped
 
@@ -188,6 +188,11 @@ def run_once(*, force_seed: bool = False) -> int:
         return 0
 
     # 2) For shipped models missing evals, check AA → EVALS
+    if not models_awaiting_evals(state):
+        log.info("No shipped models waiting on evals; skip Artificial Analysis")
+        save_state(state)
+        return 0
+
     aa_key = os.getenv("AA_API_KEY", "")
     try:
         aa_models = fetch_aa_models(aa_key, state)

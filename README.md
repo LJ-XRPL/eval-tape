@@ -87,13 +87,13 @@ Local copy: `cp .env.example .env` (gitignored).
 | `DRY_RUN=true` (default) | Render cards → `out/`, print captions, update state, **no X calls** |
 | `DRY_RUN=false` | Same + post to X with media + source reply |
 
-Workflow: every **30 minutes** + `workflow_dispatch` (`samples` / `run` / `seed`).
+Workflow: every **5 minutes** (GitHub Actions’ cron floor) + `workflow_dispatch` (`samples` / `run` / `seed`). Scheduled polls skip unit tests and sample-card rendering so detect starts sooner. RSS and Hugging Face are fetched in parallel (16 workers, 8s timeout). Artificial Analysis is skipped until a shipped model is waiting on evals.
 
 ## Local commands
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 
 # Sample cards + captions (no secrets)
 python -m src.main --samples
