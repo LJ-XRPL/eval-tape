@@ -76,7 +76,7 @@ Repo → Settings → Secrets and variables → Actions:
 | `X_ACCESS_TOKEN` | for live | |
 | `X_ACCESS_SECRET` | for live | |
 | `AA_API_KEY` | for evals | |
-| `DRY_RUN` | optional | default `true` if unset. Set `false` only when ready to post. |
+| `DRY_RUN` | optional | Local default is `true`. Scheduled Actions runs are live (`false`). |
 
 Local copy: `cp .env.example .env` (gitignored).
 
@@ -84,8 +84,8 @@ Local copy: `cp .env.example .env` (gitignored).
 
 | Mode | Behavior |
 |---|---|
-| `DRY_RUN=true` (default) | Render cards → `out/`, print captions, update state, **no X calls** |
-| `DRY_RUN=false` | Same + post to X with media + source reply |
+| `DRY_RUN=true` (local default) | Render cards → `out/`, print captions, update state, **no X calls** |
+| `DRY_RUN=false` (Actions) | Same + post to X with media + source reply |
 
 Workflow: every **5 minutes** (GitHub Actions’ cron floor) + `workflow_dispatch` (`samples` / `run` / `seed`). Scheduled polls skip unit tests and sample-card rendering so detect starts sooner. RSS and Hugging Face are fetched in parallel (16 workers, 8s timeout). Artificial Analysis is skipped until a shipped model is waiting on evals.
 

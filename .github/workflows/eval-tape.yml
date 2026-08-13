@@ -78,7 +78,7 @@ jobs:
       - name: Seed or run bot
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.mode != 'samples')
         env:
-          DRY_RUN: ${{ secrets.DRY_RUN || 'true' }}
+          DRY_RUN: "false"
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
