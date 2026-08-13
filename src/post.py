@@ -25,13 +25,19 @@ def dry_run_enabled() -> bool:
     return raw not in {"0", "false", "no"}
 
 
-def _client():
+def _oauth_client(
+    *,
+    access_token: str | None = None,
+    access_secret: str | None = None,
+    api_key: str | None = None,
+    api_secret: str | None = None,
+):
     import tweepy
 
-    api_key = os.environ["X_API_KEY"]
-    api_secret = os.environ["X_API_SECRET"]
-    access_token = os.environ["X_ACCESS_TOKEN"]
-    access_secret = os.environ["X_ACCESS_SECRET"]
+    api_key = api_key or os.environ["X_API_KEY"]
+    api_secret = api_secret or os.environ["X_API_SECRET"]
+    access_token = access_token or os.environ["X_ACCESS_TOKEN"]
+    access_secret = access_secret or os.environ["X_ACCESS_SECRET"]
 
     # OAuth 1.0a user context for posting + media upload
     client = tweepy.Client(
@@ -43,6 +49,10 @@ def _client():
     auth = tweepy.OAuth1UserHandler(api_key, api_secret, access_token, access_secret)
     api_v1 = tweepy.API(auth)
     return client, api_v1
+
+
+def _client():
+    return _oauth_client()
 
 
 def post_with_media(

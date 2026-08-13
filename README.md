@@ -76,6 +76,8 @@ Repo → Settings → Secrets and variables → Actions:
 | `X_ACCESS_TOKEN` | for live | |
 | `X_ACCESS_SECRET` | for live | |
 | `AA_API_KEY` | for evals | |
+| `FOUNDER_X_ACCESS_TOKEN` | for quotes | Personal-account access token (PIN as you, not @evaltape) |
+| `FOUNDER_X_ACCESS_SECRET` | for quotes | |
 | `DRY_RUN` | optional | Local default is `true`. Scheduled Actions runs are live (`false`). |
 
 Local copy: `cp .env.example .env` (gitignored).
@@ -106,7 +108,17 @@ python -m src.main --seed
 
 # One cycle (respects DRY_RUN)
 python -m src.main --run
+
+# Profile website + pin launch tweet (+ founder quote if tokens exist)
+python -m src.main --bootstrap
 ```
+
+## Distribution
+
+@evaltape does not reply-spam lab accounts. Initial distribution is:
+
+1. Website on the profile + pin the latest SHIPPED/EVALS card (automated).
+2. Optional founder quote of the first 5 posts, if `FOUNDER_X_*` is set for your personal account.
 
 ## Post copy
 

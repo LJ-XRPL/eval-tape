@@ -83,6 +83,8 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          FOUNDER_X_ACCESS_TOKEN: ${{ secrets.FOUNDER_X_ACCESS_TOKEN }}
+          FOUNDER_X_ACCESS_SECRET: ${{ secrets.FOUNDER_X_ACCESS_SECRET }}
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
         run: |
           MODE="${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'run' }}"

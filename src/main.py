@@ -21,6 +21,7 @@ from src.captions import (
 from src.cards import render_evals_card, render_ranked_evals_card, render_shipped_card
 from src.config import LAB_BY_KEY, OUT_DIR, BATCH_EVALS_PHOTOS
 from src.detect import detect_candidates, seed_seen_from_current
+from src.distribute import amplify_post, bootstrap_distribution
 from src.evals import fetch_aa_models, find_new_evals, models_awaiting_evals
 from src.post import dry_run_enabled, post_with_media
 from src.state import load_state, mark_evals_posted, record_post, remaining_posts_today, save_state, upsert_shipped
@@ -131,6 +132,9 @@ def run_once(*, force_seed: bool = False) -> int:
         log.info("Seeded %s existing candidates; posting nothing this run", added)
         return 0
 
+    bootstrap_distribution(state, dry_run=dry)
+    save_state(state)
+
     budget = remaining_posts_today(state)
     if budget <= 0:
         log.info("Daily post cap reached; exiting")
@@ -179,6 +183,14 @@ def run_once(*, force_seed: bool = False) -> int:
             tweet_id=result.tweet_id,
         )
         record_post(state, result.tweet_id)
+        if result.tweet_id and not result.dry_run:
+            amplify_post(
+                state,
+                tweet_id=result.tweet_id,
+                kind="shipped",
+                model_name=cand.name,
+                dry_run=dry,
+            )
         posts_made += 1
         log.info("SHIPPED processed: %s", cand.name)
 
@@ -245,6 +257,14 @@ def run_once(*, force_seed: bool = False) -> int:
                 tweet_id=result.tweet_id,
             )
         record_post(state, result.tweet_id)
+        if result.tweet_id and not result.dry_run:
+            amplify_post(
+                state,
+                tweet_id=result.tweet_id,
+                kind="evals",
+                model_name=batch[0]["name"],
+                dry_run=dry,
+            )
         posts_made += 1
         log.info("EVALS batch posted (%s models)", len(batch))
     else:
@@ -281,6 +301,14 @@ def run_once(*, force_seed: bool = False) -> int:
             tweet_id=result.tweet_id,
         )
         record_post(state, result.tweet_id)
+        if result.tweet_id and not result.dry_run:
+            amplify_post(
+                state,
+                tweet_id=result.tweet_id,
+                kind="evals",
+                model_name=r["name"],
+                dry_run=dry,
+            )
         posts_made += 1
         log.info("EVALS posted: %s", r["name"])
 
@@ -306,7 +334,20 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Run one detection/evals cycle",
     )
+    parser.add_argument(
+        "--bootstrap",
+        action="store_true",
+        help="Set @evaltape website, pin the launch tweet, founder-quote if tokens exist",
+    )
     args = parser.parse_args(argv)
+
+    if args.bootstrap and not args.run and not args.seed and not args.samples:
+        load_dotenv()
+        state = load_state()
+        dist = bootstrap_distribution(state, dry_run=dry_run_enabled())
+        save_state(state)
+        log.info("Bootstrap done: %s", dist)
+        return 0
 
     if args.samples or (not args.run and not args.seed):
         # Default CI entry: samples are always safe / no secrets required
