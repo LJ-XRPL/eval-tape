@@ -5,6 +5,19 @@
   },
   "last_tweet_ids": [],
   "posted_models": {
+    "hf:MiniMaxAI/MiniMax-Music3": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "minimax",
+      "name": "MiniMax Music3",
+      "open_closed": "open",
+      "shipped_at": "2026-08-13T16:26:25.778404+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3"
+    },
     "hf:deepseek-ai/DeepSeek-V4-Pro-0813": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -20,7 +33,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-08-13"
   },
   "seeded": true,
@@ -575,6 +588,7 @@
     "hf:MiniMaxAI/SynLogic-Mix-3-32B",
     "hf:MiniMaxAI/SynLogic-32B",
     "hf:MiniMaxAI/MiniMax-Text-01",
-    "hf:deepseek-ai/DeepSeek-V4-Pro-0813"
+    "hf:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "hf:MiniMaxAI/MiniMax-Music3"
   ]
 }
