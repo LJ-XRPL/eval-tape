@@ -125,11 +125,29 @@ GPT-5.6 Sol: 61 on Artificial Analysis, rank 5.
 Closed. One behind Opus 5 (max) at 63.
 ```
 
+Line 1 is the hook. Line 2 is the payoff (a comparable fact people can reply to). Same voice every post so Phoenix can learn the account.
+
 ## Visuals
 
-Pillow PNGs, 16:9. Same bones every time; **lab color** is the only theme change.
+Pillow PNGs at **1600×900 (16:9)** — X’s native single-image timeline slot. Same bones every time; **lab color** is the only theme change. PNG, not JPEG (type survives recompress). Alt text is attached on upload.
 
-- **SHIPPED** — full-bleed lab color, giant model name, OPEN/CLOSED pill, black lower-third `SHIPPED · LAB · EVALTAPE`, sprocket-hole tape signature.
-- **EVALS** — matte black jumbotron, enormous Intelligence Index number, RANK n, `EVALTAPE · ARTIFICIAL ANALYSIS` footer, sprocket holes.
+- **SHIPPED** — full-bleed lab color, giant condensed name that fills the well, OPEN/CLOSED pill, black lower-third `SHIPPED · LAB · EVALTAPE`, 35mm sprocket rails.
+- **EVALS** — matte black jumbotron, pixel-LED Intelligence Index (unlit grid + beads reward tap-to-expand), RANK n, `EVALTAPE · ARTIFICIAL ANALYSIS` footer.
 
 Video: not in v1.
+
+## Why the posts look like this (Phoenix)
+
+X’s For You ranker (Phoenix, 2026) predicts **19 actions**, not a single engagement score. Eval Tape is built to fire several of those heads without bait:
+
+| Head | What we do |
+|---|---|
+| **Reply** | Line 2 is a specific comparison (who’s ahead, open vs closed) — not “what do you think?” |
+| **Dwell** | Two-line payoff + a card that takes a second to read. Specific names and numbers. |
+| **Photo expand** | LED pixels, film perforations, grain — timeline shows the number; full-screen shows the grid |
+| **Quote / repost** | Line 1 is a standalone sentence; the card still makes sense when quoted |
+| **Profile click** | Same tape rails + EVALTAPE wordmark every time |
+| **Click** | No URL in the status (costlier, leaves the app). Source is the first reply. |
+| **Not-interested / mute** | No hashtags, no dunk bait, no cadence spam. Cap 3/day matches author-diversity decay. |
+
+Out-of-network retrieval is embedding-based: distinctive copy (“independent board”, “not vendor scorecards”, “Closed.” / “Open weights.”) beats generic launch-speak.

@@ -10,9 +10,17 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from src.captions import ComparableFact, format_evals_caption, format_ranked_evals_list, format_shipped_caption
+from src.captions import (
+    ComparableFact,
+    format_alt_evals,
+    format_alt_ranked,
+    format_alt_shipped,
+    format_evals_caption,
+    format_ranked_evals_list,
+    format_shipped_caption,
+)
 from src.cards import render_evals_card, render_ranked_evals_card, render_shipped_card
-from src.config import OUT_DIR
+from src.config import LAB_BY_KEY, OUT_DIR
 from src.detect import detect_candidates, seed_seen_from_current
 from src.evals import fetch_aa_models, find_new_evals
 from src.post import dry_run_enabled, post_with_media
@@ -49,6 +57,17 @@ def render_samples(out_dir: Path | None = None) -> list[Path]:
         rank=12,
         out_path=out / "sample_evals_open.png",
     )
+    openai_shipped = render_shipped_card(
+        model_name="GPT-5.6 Sol",
+        lab_key="openai",
+        open_closed="closed",
+        out_path=out / "sample_shipped_openai.png",
+    )
+    ranked = render_ranked_evals_card(
+        rows=[("Opus 5", 63, 1), ("GPT-5.6 Sol", 61, 5), ("DeepSeek V4", 58, 12)],
+        lab_key="anthropic",
+        out_path=out / "sample_evals_ranked.png",
+    )
     shipped_caption = format_shipped_caption("Claude Opus 5", "closed")
     evals_caption = format_evals_caption(
         "GPT-5.6 Sol",
@@ -67,13 +86,18 @@ def render_samples(out_dir: Path | None = None) -> list[Path]:
     print("--- SAMPLE SHIPPED ---")
     print(shipped_caption)
     print(f"card: {shipped_path}")
+    print(format_alt_shipped("Claude Opus 5", "Anthropic", "closed"))
     print("--- SAMPLE EVALS ---")
     print(evals_caption)
     print(f"card: {evals_path}")
+    print(format_alt_evals("GPT-5.6 Sol", 61, 5, "closed"))
     print("--- SAMPLE OPEN EVALS ---")
     print(open_caption)
     print(f"card: {open_evals}")
-    return [shipped_path, evals_path, open_evals]
+    print(format_alt_evals("DeepSeek V4", 58, 12, "open"))
+    print(f"card: {openai_shipped}")
+    print(f"card: {ranked}")
+    return [shipped_path, evals_path, open_evals, openai_shipped, ranked]
 
 
 def run_once(*, force_seed: bool = False) -> int:
@@ -118,10 +142,12 @@ def run_once(*, force_seed: bool = False) -> int:
             out_path=card_path,
         )
         caption = format_shipped_caption(cand.name, cand.open_closed)
+        lab_display = LAB_BY_KEY[cand.lab_key].display if cand.lab_key in LAB_BY_KEY else cand.lab_key
         result = post_with_media(
             caption=caption,
             media_path=card_path,
             source_url=cand.source_url,
+            alt_text=format_alt_shipped(cand.name, lab_display, cand.open_closed),
             dry_run=dry,
         )
         model_key = cand.id
@@ -172,6 +198,7 @@ def run_once(*, force_seed: bool = False) -> int:
             caption=caption,
             media_path=card_path,
             source_url="https://artificialanalysis.ai/",
+            alt_text=format_alt_ranked(rows),
             dry_run=dry,
         )
         for r in batch:
@@ -208,6 +235,7 @@ def run_once(*, force_seed: bool = False) -> int:
             caption=caption,
             media_path=card_path,
             source_url="https://artificialanalysis.ai/",
+            alt_text=format_alt_evals(r["name"], r["aa"].score, r["aa"].rank, r["open_closed"]),
             dry_run=dry,
         )
         mark_evals_posted(

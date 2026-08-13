@@ -49,6 +49,7 @@ def post_with_media(
     caption: str,
     media_path: Path,
     source_url: str,
+    alt_text: str | None = None,
     dry_run: bool | None = None,
 ) -> PostResult:
     """Create tweet with image; put canonical URL in the first reply only."""
@@ -59,10 +60,13 @@ def post_with_media(
 
     is_dry = dry_run if dry_run is not None else dry_run_enabled()
     media_path = Path(media_path)
+    alt = (alt_text or "")[:1000] or None
 
     if is_dry:
         log.info("DRY_RUN caption:\n%s", caption)
         log.info("DRY_RUN media: %s", media_path)
+        if alt:
+            log.info("DRY_RUN alt: %s", alt)
         log.info("DRY_RUN reply would be: %s", source_url)
         return PostResult(
             tweet_id=None,
@@ -75,6 +79,8 @@ def post_with_media(
     client, api_v1 = _client()
     media = api_v1.media_upload(filename=str(media_path))
     media_id = media.media_id_string
+    if alt:
+        api_v1.create_media_metadata(media_id, alt_text=alt)
     created = client.create_tweet(text=caption, media_ids=[media_id])
     tweet_id = str(created.data["id"])
     reply = client.create_tweet(
