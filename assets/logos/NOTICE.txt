@@ -1,0 +1,7 @@
+Lab marks used on Eval Tape cards.
+
+- Most SVGs: [lobehub/lobe-icons](https://github.com/lobehub/lobe-icons) (`@lobehub/icons-static-svg`), MIT.
+  openai, anthropic, google, gemma, xai, microsoft, meta, deepseek, mistral, qwen, kimi, minimax, glm (Zhipu), cohere.
+- amazon.svg: [Simple Icons](https://github.com/simple-icons/simple-icons) Amazon smile, CC0-1.0 (the AWS wordmark is unreadable at tape size).
+
+These are trademarks of their owners, used here to identify the lab on a news card. Not affiliated with or endorsed by those labs.

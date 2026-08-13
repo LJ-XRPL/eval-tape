@@ -1,0 +1,6 @@
+SIL Open Font License 1.1 — bundled for deterministic card rendering.
+
+- Anton — Vernon Adams
+- Bebas Neue — Dharma Type
+- Barlow Condensed — Jeremy Tribby
+- Inter — Rasmus Andersson
