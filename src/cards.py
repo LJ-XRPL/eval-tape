@@ -7,6 +7,7 @@ from pathlib import Path
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 from src.config import CARD_HEIGHT, CARD_WIDTH, LAB_BY_KEY, PALETTES, ROOT
+from src.logos import logo_path, paste_logo
 
 FONTS_DIR = ROOT / "assets" / "fonts"
 
@@ -16,6 +17,12 @@ HOLE_W, HOLE_H = 34, 22
 HOLE_GAP = 16
 HOLE_INSET = 21
 LOWER_THIRD_H = 128
+# Film-edge manufacturer mark (between perforations). Photo-expand detail.
+RAIL_LOGO_SIZE = 42
+# Well bug — readable at ~400px timeline width.
+WELL_LOGO_SIZE = 88
+EVALS_LOGO_SIZE = 64
+RAIL_LOGO_FILL = "#D8D8D8"
 
 _FONT_FILES = {
     "display": ("BebasNeue-Regular.ttf", "Anton-Regular.ttf", "BarlowCondensed-Black.ttf"),
@@ -127,7 +134,20 @@ def _content_box() -> tuple[int, int, int, int]:
     return RAIL_W, 0, CARD_WIDTH - RAIL_W, CARD_HEIGHT
 
 
-def _draw_film_rails(draw: ImageDraw.ImageDraw, *, rail: str = "#0B0B0B", hole: str = "#2E2E2E") -> None:
+def _rail_logo_band() -> tuple[int, int]:
+    """Vertical window on the left rail where sprocket holes yield to the lab mark."""
+    cy = CARD_HEIGHT // 2
+    pad = 18
+    return cy - RAIL_LOGO_SIZE // 2 - pad, cy + RAIL_LOGO_SIZE // 2 + pad
+
+
+def _draw_film_rails(
+    draw: ImageDraw.ImageDraw,
+    *,
+    rail: str = "#0B0B0B",
+    hole: str = "#2E2E2E",
+    skip_left_band: tuple[int, int] | None = None,
+) -> None:
     """Left/right perforation rails — punched holes, not outlined rectangles."""
     w, h = CARD_WIDTH, CARD_HEIGHT
     draw.rectangle([0, 0, RAIL_W, h], fill=rail)
@@ -140,8 +160,12 @@ def _draw_film_rails(draw: ImageDraw.ImageDraw, *, rail: str = "#0B0B0B", hole: 
     y = 28
     rim = _mix(hole, "#000000", 0.35)
     glint = _mix(hole, "#FFFFFF", 0.22)
+    skip = skip_left_band
     while y + HOLE_H < h - 20:
         for x in (HOLE_INSET, w - HOLE_INSET - HOLE_W):
+            left_rail = x == HOLE_INSET
+            if skip and left_rail and y < skip[1] and y + HOLE_H > skip[0]:
+                continue
             draw.rounded_rectangle([x, y, x + HOLE_W, y + HOLE_H], radius=6, fill=rim)
             draw.rounded_rectangle(
                 [x + 2, y + 2, x + HOLE_W - 2, y + HOLE_H - 2],
@@ -150,6 +174,15 @@ def _draw_film_rails(draw: ImageDraw.ImageDraw, *, rail: str = "#0B0B0B", hole: 
             )
             draw.arc([x + 4, y + 3, x + 18, y + 12], start=200, end=320, fill=glint, width=2)
         y += HOLE_H + HOLE_GAP
+
+
+def _stamp_rail_logo(img: Image.Image, lab_key: str) -> None:
+    """Kodak-style edge print: lab mark on the left film rail."""
+    if logo_path(lab_key) is None:
+        return
+    x = (RAIL_W - RAIL_LOGO_SIZE) // 2
+    y = CARD_HEIGHT // 2 - RAIL_LOGO_SIZE // 2
+    paste_logo(img, lab_key, (x, y), size=RAIL_LOGO_SIZE, color=RAIL_LOGO_FILL, opacity=0.92)
 
 
 def _grain(img: Image.Image, amount: float = 0.045) -> Image.Image:
@@ -381,19 +414,33 @@ def render_shipped_card(
     pal = _palette(lab_key)
     img = Image.new("RGB", (CARD_WIDTH, CARD_HEIGHT), pal["bg"])
     draw = ImageDraw.Draw(img)
-    _draw_film_rails(draw)
+    skip = _rail_logo_band() if logo_path(lab_key) else None
+    _draw_film_rails(draw, skip_left_band=skip)
+    _stamp_rail_logo(img, lab_key)
+    draw = ImageDraw.Draw(img)
 
     left, _, right, _ = _content_box()
     pad = 64
 
-    # OPEN / CLOSED pill — small stamp, not a competing headline.
+    # Lab mark in the well (timeline-readable) + OPEN / CLOSED pill.
+    has_logo = logo_path(lab_key) is not None
+    logo_x = left + pad
+    logo_y = 40
+    if has_logo:
+        paste_logo(img, lab_key, (logo_x, logo_y), size=WELL_LOGO_SIZE, color=pal["fg"])
+        draw = ImageDraw.Draw(img)
+        pill_x = logo_x + WELL_LOGO_SIZE + 24
+    else:
+        pill_x = left + pad
+
     pill = "OPEN" if open_closed == "open" else "CLOSED"
     pill_font = _font("ui", 28)
     tracking = 4
     tw = _tracked_width(draw, pill, pill_font, tracking)
     ph = _size(draw, pill, pill_font)[1]
     pad_x, pad_y = 22, 12
-    pill_box = [left + pad, 52, left + pad + int(tw) + pad_x * 2, 52 + ph + pad_y * 2]
+    pill_y = logo_y + (WELL_LOGO_SIZE - (ph + pad_y * 2)) // 2 if has_logo else 52
+    pill_box = [pill_x, pill_y, pill_x + int(tw) + pad_x * 2, pill_y + ph + pad_y * 2]
     draw.rounded_rectangle(pill_box, radius=999, fill=pal["pill_bg"])
     _draw_tracked(
         draw,
@@ -412,7 +459,7 @@ def render_shipped_card(
     _draw_tracked(draw, (right - pad - bw, 62), brand, brand_font, brand_fill, 6)
 
     # Giant condensed model name, left-aligned in the well (poster, not PowerPoint).
-    name_top = pill_box[3] + 24
+    name_top = max(pill_box[3], (logo_y + WELL_LOGO_SIZE if has_logo else 0)) + 20
     name_bottom = CARD_HEIGHT - LOWER_THIRD_H - 12
     _draw_name_block(
         draw,
@@ -471,10 +518,22 @@ def render_evals_card(
     led = _led_color(pal)
     img = Image.new("RGB", (CARD_WIDTH, CARD_HEIGHT), "#0A0A0A")
     draw = ImageDraw.Draw(img)
-    _draw_film_rails(draw, rail="#111111", hole="#3A3A3A")
+    skip = _rail_logo_band() if logo_path(lab_key) else None
+    _draw_film_rails(draw, rail="#111111", hole="#3A3A3A", skip_left_band=skip)
+    _stamp_rail_logo(img, lab_key)
+    draw = ImageDraw.Draw(img)
 
     left, _, right, _ = _content_box()
     pad = 64
+    if logo_path(lab_key):
+        paste_logo(
+            img,
+            lab_key,
+            (right - 28 - EVALS_LOGO_SIZE, 36),
+            size=EVALS_LOGO_SIZE,
+            color="#F4F4F4",
+        )
+        draw = ImageDraw.Draw(img)
 
     # Model name — condensed, top of the jumbotron.
     name_font, _, name_lines = _fit_lines(
@@ -550,6 +609,7 @@ def render_ranked_evals_card(
     led = _led_color(pal)
     img = Image.new("RGB", (CARD_WIDTH, CARD_HEIGHT), "#0A0A0A")
     draw = ImageDraw.Draw(img)
+    # Mixed list — no single-lab mark on the rail.
     _draw_film_rails(draw, rail="#111111", hole="#3A3A3A")
 
     left, _, right, _ = _content_box()

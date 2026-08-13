@@ -63,6 +63,23 @@ def render_samples(out_dir: Path | None = None) -> list[Path]:
         open_closed="closed",
         out_path=out / "sample_shipped_openai.png",
     )
+    extra = []
+    for name, key, kind, filename in (
+        ("Mistral Large 3", "mistral", "open", "sample_shipped_mistral.png"),
+        ("Gemini 3 Pro", "google", "closed", "sample_shipped_google.png"),
+        ("Grok 4", "xai", "closed", "sample_shipped_xai.png"),
+        ("Gemma 4", "gemma", "open", "sample_shipped_gemma.png"),
+        ("Command A", "cohere", "open", "sample_shipped_cohere.png"),
+        ("Kimi K2.5", "kimi", "open", "sample_shipped_kimi.png"),
+    ):
+        extra.append(
+            render_shipped_card(
+                model_name=name,
+                lab_key=key,
+                open_closed=kind,
+                out_path=out / filename,
+            )
+        )
     ranked = render_ranked_evals_card(
         rows=[("Opus 5", 63, 1), ("GPT-5.6 Sol", 61, 5), ("DeepSeek V4", 58, 12)],
         lab_key="anthropic",
@@ -97,7 +114,9 @@ def render_samples(out_dir: Path | None = None) -> list[Path]:
     print(format_alt_evals("DeepSeek V4", 58, 12, "open"))
     print(f"card: {openai_shipped}")
     print(f"card: {ranked}")
-    return [shipped_path, evals_path, open_evals, openai_shipped, ranked]
+    for path in extra:
+        print(f"card: {path}")
+    return [shipped_path, evals_path, open_evals, openai_shipped, ranked, *extra]
 
 
 def run_once(*, force_seed: bool = False) -> int:

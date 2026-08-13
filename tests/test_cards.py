@@ -2,8 +2,9 @@
 
 from PIL import Image
 
-from src.cards import render_evals_card, render_ranked_evals_card, render_shipped_card
-from src.config import CARD_HEIGHT, CARD_WIDTH
+from src.cards import RAIL_W, render_evals_card, render_ranked_evals_card, render_shipped_card
+from src.config import CARD_HEIGHT, CARD_WIDTH, LAB_BY_KEY
+from src.logos import expected_logo_keys, load_logo, logo_path
 
 
 def test_shipped_card_is_16x9(tmp_path):
@@ -47,6 +48,36 @@ def test_palettes_use_official_brand_hex():
     assert PALETTES["cohere"]["bg"] == "#152455"
     assert PALETTES["cohere"]["accent"] == "#DA532C"
     assert PALETTES["gemma"]["bg"] != PALETTES["google"]["bg"]
+
+
+def test_every_lab_has_an_svg_mark():
+    missing = [key for key in expected_logo_keys() if logo_path(key) is None]
+    assert missing == [], f"missing SVG marks: {missing}"
+    assert set(expected_logo_keys()) == set(LAB_BY_KEY)
+
+
+def test_svg_marks_rasterize_with_alpha():
+    mark = load_logo("anthropic", 64, "#FFFFFF")
+    assert mark is not None
+    assert mark.size == (64, 64)
+    assert mark.mode == "RGBA"
+    extrema = mark.getchannel("A").getextrema()
+    assert extrema is not None and extrema[1] > 200
+
+
+def test_shipped_card_stamps_logo_on_the_left_rail(tmp_path):
+    path = tmp_path / "rail.png"
+    render_shipped_card(
+        model_name="Claude Opus 5",
+        lab_key="anthropic",
+        open_closed="closed",
+        out_path=path,
+    )
+    img = Image.open(path).convert("RGB")
+    # Skip-band center of the left rail should not be solid film black.
+    cx, cy = RAIL_W // 2, CARD_HEIGHT // 2
+    sample = [img.getpixel((cx + dx, cy + dy)) for dx in range(-8, 9, 4) for dy in range(-8, 9, 4)]
+    assert any(sum(px) > 80 for px in sample)
 
 
 def test_ranked_evals_card_renders(tmp_path):
