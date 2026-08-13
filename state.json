@@ -4,10 +4,24 @@
     "fetched_at": null
   },
   "last_tweet_ids": [],
-  "posted_models": {},
+  "posted_models": {
+    "hf:deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "deepseek",
+      "name": "Deepseek V4 Pro 0813",
+      "open_closed": "open",
+      "shipped_at": "2026-08-13T12:49:28.895924+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+    }
+  },
   "posts_today": {
-    "count": 0,
-    "date": null
+    "count": 1,
+    "date": "2026-08-13"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -560,6 +574,7 @@
     "hf:MiniMaxAI/SynLogic-7B",
     "hf:MiniMaxAI/SynLogic-Mix-3-32B",
     "hf:MiniMaxAI/SynLogic-32B",
-    "hf:MiniMaxAI/MiniMax-Text-01"
+    "hf:MiniMaxAI/MiniMax-Text-01",
+    "hf:deepseek-ai/DeepSeek-V4-Pro-0813"
   ]
 }
