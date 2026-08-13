@@ -132,7 +132,9 @@ Line 1 is the hook. Line 2 is the payoff (a comparable fact people can reply to)
 Pillow PNGs at **1600×900 (16:9)** — X’s native single-image timeline slot. Same bones every time; **lab color** is the only theme change. PNG, not JPEG (type survives recompress). Alt text is attached on upload.
 
 - **SHIPPED** — full-bleed lab color, giant condensed name that fills the well, OPEN/CLOSED pill, black lower-third `SHIPPED · LAB · EVALTAPE`, 35mm sprocket rails.
-- **EVALS** — matte black jumbotron, pixel-LED Intelligence Index (unlit grid + beads reward tap-to-expand), RANK n, `EVALTAPE · ARTIFICIAL ANALYSIS` footer.
+- **EVALS** — matte black jumbotron, pixel-LED Intelligence Index in the lab’s brand accent, RANK n, `EVALTAPE · ARTIFICIAL ANALYSIS` footer.
+
+Palettes use each lab’s live brand hex (Anthropic clay `#D97757`, OpenAI `#10A37F`, Google Blue `#4285F4`, Mistral `#FA520F`, DeepSeek `#4D6BFE`, Qwen `#615CED`, Meta `#0082FB`, Kimi `#0A7AFF`, MiniMax `#FF5530`, Gemma `#15B789`, Cohere navy/coral, etc.).
 
 Video: not in v1.
 

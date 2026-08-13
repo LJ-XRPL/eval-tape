@@ -363,11 +363,11 @@ def _draw_led_score(base: Image.Image, score_text: str, cx: int, cy: int, led: s
 
 
 def _led_color(pal: dict[str, str]) -> str:
-    accent = pal.get("accent") or pal.get("fg") or "#39FF14"
-    if accent.lower() in {"#ffffff", "#f5f5f5", "#f8fafc", "#f3e8ff", "#e6fffa", "#d4f5e9"}:
-        return "#39FF14"
-    if accent.lower() in {"#0a0a0a", "#000000", "#1a0f00"}:
-        return "#39FF14"
+    """Brand accent on the jumbotron. Only substitute when it would vanish on black."""
+    accent = pal.get("accent") or pal.get("fg") or "#F5F5F5"
+    if accent.lower() in {"#0a0a0a", "#000000", "#0f0f0f", "#141413", "#1a0f00", "#1f1f1f"}:
+        fg = (pal.get("fg") or "").lower()
+        return pal["fg"] if fg and fg not in {"#0a0a0a", "#000000"} else "#F5F5F5"
     return accent
 
 

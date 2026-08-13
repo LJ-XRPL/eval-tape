@@ -146,23 +146,39 @@ LABS: tuple[Lab, ...] = (
 
 LAB_BY_KEY = {lab.key: lab for lab in LABS}
 
-# Lab color is the only theme change. Unknown → white on black.
+# Lab color is the only theme change. Hexes from official brand systems / live sites.
+# Unknown → white on black.
 PALETTES: dict[str, dict[str, str]] = {
-    "anthropic": {"bg": "#C15F3C", "fg": "#0A0A0A", "accent": "#0A0A0A", "pill_bg": "#0A0A0A", "pill_fg": "#F5F0EB"},
-    "openai": {"bg": "#0A0A0A", "fg": "#10A37F", "accent": "#10A37F", "pill_bg": "#10A37F", "pill_fg": "#0A0A0A"},
-    "google": {"bg": "#1A73E8", "fg": "#FFFFFF", "accent": "#FFFFFF", "pill_bg": "#0B1F3A", "pill_fg": "#FFFFFF"},
+    # Anthropic: clay #D97757, ink #141413, canvas #FAF9F5 (brand-guidelines)
+    "anthropic": {"bg": "#D97757", "fg": "#141413", "accent": "#D97757", "pill_bg": "#141413", "pill_fg": "#FAF9F5"},
+    # OpenAI: near-black + ChatGPT green #10A37F
+    "openai": {"bg": "#0F0F0F", "fg": "#10A37F", "accent": "#10A37F", "pill_bg": "#10A37F", "pill_fg": "#0F0F0F"},
+    # Google Blue
+    "google": {"bg": "#4285F4", "fg": "#FFFFFF", "accent": "#4285F4", "pill_bg": "#FFFFFF", "pill_fg": "#1A73E8"},
+    # xAI: black / white
     "xai": {"bg": "#000000", "fg": "#FFFFFF", "accent": "#FFFFFF", "pill_bg": "#FFFFFF", "pill_fg": "#000000"},
+    # Amazon orange + squid ink
     "amazon": {"bg": "#232F3E", "fg": "#FF9900", "accent": "#FF9900", "pill_bg": "#FF9900", "pill_fg": "#232F3E"},
-    "microsoft": {"bg": "#0078D4", "fg": "#FFFFFF", "accent": "#FFFFFF", "pill_bg": "#0A0A0A", "pill_fg": "#FFFFFF"},
-    "meta": {"bg": "#0668E1", "fg": "#FFFFFF", "accent": "#FFFFFF", "pill_bg": "#0A2540", "pill_fg": "#FFFFFF"},
-    "deepseek": {"bg": "#0B1F3A", "fg": "#00D4FF", "accent": "#00D4FF", "pill_bg": "#00D4FF", "pill_fg": "#0B1F3A"},
-    "mistral": {"bg": "#F7A019", "fg": "#1A0F00", "accent": "#1A0F00", "pill_bg": "#1A0F00", "pill_fg": "#F7A019"},
-    "qwen": {"bg": "#5B2C8A", "fg": "#F3E8FF", "accent": "#E9D5FF", "pill_bg": "#2E1065", "pill_fg": "#F3E8FF"},
-    "kimi": {"bg": "#0D7377", "fg": "#E6FFFA", "accent": "#99F6E4", "pill_bg": "#134E4A", "pill_fg": "#E6FFFA"},
-    "minimax": {"bg": "#111827", "fg": "#F97316", "accent": "#F97316", "pill_bg": "#F97316", "pill_fg": "#111827"},
-    "gemma": {"bg": "#1A73E8", "fg": "#FFFFFF", "accent": "#FFFFFF", "pill_bg": "#0B1F3A", "pill_fg": "#FFFFFF"},
-    "glm": {"bg": "#1E3A5F", "fg": "#F8FAFC", "accent": "#93C5FD", "pill_bg": "#0F172A", "pill_fg": "#F8FAFC"},
-    "cohere": {"bg": "#39594D", "fg": "#D4F5E9", "accent": "#D4F5E9", "pill_bg": "#0F241C", "pill_fg": "#D4F5E9"},
+    # Microsoft logo blue
+    "microsoft": {"bg": "#00A4EF", "fg": "#FFFFFF", "accent": "#00A4EF", "pill_bg": "#FFFFFF", "pill_fg": "#000000"},
+    # Meta Blue (ai.meta.com)
+    "meta": {"bg": "#0082FB", "fg": "#FFFFFF", "accent": "#0082FB", "pill_bg": "#FFFFFF", "pill_fg": "#0064E0"},
+    # DeepSeek Blue (deepseek.com)
+    "deepseek": {"bg": "#4D6BFE", "fg": "#FFFFFF", "accent": "#4D6BFE", "pill_bg": "#FFFFFF", "pill_fg": "#4D6BFE"},
+    # Mistral Orange (mistral.ai)
+    "mistral": {"bg": "#FA520F", "fg": "#1F1F1F", "accent": "#FA520F", "pill_bg": "#1F1F1F", "pill_fg": "#FFFFFF"},
+    # Qwen indigo (qwenlm.github.io)
+    "qwen": {"bg": "#615CED", "fg": "#FFFFFF", "accent": "#615CED", "pill_bg": "#FFFFFF", "pill_fg": "#4F2DDA"},
+    # Kimi logo fill (platform.moonshot.ai)
+    "kimi": {"bg": "#0A7AFF", "fg": "#FFFFFF", "accent": "#0A7AFF", "pill_bg": "#FFFFFF", "pill_fg": "#0A7AFF"},
+    # MiniMax brand coral
+    "minimax": {"bg": "#FF5530", "fg": "#0A0A0A", "accent": "#FF5530", "pill_bg": "#0A0A0A", "pill_fg": "#FFFFFF"},
+    # Gemma gem-green (Google AI for Developers Gemma surfaces) — not Google Blue
+    "gemma": {"bg": "#15B789", "fg": "#0A0A0A", "accent": "#15B789", "pill_bg": "#0A0A0A", "pill_fg": "#FFFFFF"},
+    # GLM / Z.ai product chrome
+    "glm": {"bg": "#141618", "fg": "#F4F6F8", "accent": "#F4F6F8", "pill_bg": "#F4F6F8", "pill_fg": "#141618"},
+    # Cohere: navy #152455, cream #F0EEE9, coral #DA532C (cohere.com)
+    "cohere": {"bg": "#152455", "fg": "#F0EEE9", "accent": "#DA532C", "pill_bg": "#DA532C", "pill_fg": "#FFFFFF"},
     "unknown": {"bg": "#000000", "fg": "#FFFFFF", "accent": "#FFFFFF", "pill_bg": "#FFFFFF", "pill_fg": "#000000"},
 }
 

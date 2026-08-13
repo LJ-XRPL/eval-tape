@@ -33,6 +33,22 @@ def test_evals_card_is_16x9(tmp_path):
     assert img.size == (CARD_WIDTH, CARD_HEIGHT)
 
 
+def test_palettes_use_official_brand_hex():
+    from src.config import PALETTES
+
+    assert PALETTES["anthropic"]["bg"] == "#D97757"
+    assert PALETTES["openai"]["accent"] == "#10A37F"
+    assert PALETTES["google"]["bg"] == "#4285F4"
+    assert PALETTES["mistral"]["bg"] == "#FA520F"
+    assert PALETTES["deepseek"]["bg"] == "#4D6BFE"
+    assert PALETTES["qwen"]["bg"] == "#615CED"
+    assert PALETTES["kimi"]["bg"] == "#0A7AFF"
+    assert PALETTES["gemma"]["bg"] == "#15B789"
+    assert PALETTES["cohere"]["bg"] == "#152455"
+    assert PALETTES["cohere"]["accent"] == "#DA532C"
+    assert PALETTES["gemma"]["bg"] != PALETTES["google"]["bg"]
+
+
 def test_ranked_evals_card_renders(tmp_path):
     path = tmp_path / "ranked.png"
     render_ranked_evals_card(
