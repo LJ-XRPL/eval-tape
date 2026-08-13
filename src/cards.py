@@ -19,9 +19,9 @@ HOLE_INSET = 21
 LOWER_THIRD_H = 128
 # Film-edge manufacturer mark (between perforations). Photo-expand detail.
 RAIL_LOGO_SIZE = 42
-# Well bug — readable at ~400px timeline width.
-WELL_LOGO_SIZE = 88
-EVALS_LOGO_SIZE = 64
+# Well bug — ~28px at a 400px timeline thumbnail.
+WELL_LOGO_SIZE = 112
+EVALS_LOGO_SIZE = 80
 RAIL_LOGO_FILL = "#D8D8D8"
 
 _FONT_FILES = {
