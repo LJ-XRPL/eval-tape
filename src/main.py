@@ -13,14 +13,13 @@ from dotenv import load_dotenv
 from src.captions import (
     ComparableFact,
     format_alt_evals,
-    format_alt_ranked,
     format_alt_shipped,
     format_evals_caption,
     format_ranked_evals_list,
     format_shipped_caption,
 )
 from src.cards import render_evals_card, render_ranked_evals_card, render_shipped_card
-from src.config import LAB_BY_KEY, OUT_DIR
+from src.config import LAB_BY_KEY, OUT_DIR, BATCH_EVALS_PHOTOS
 from src.detect import detect_candidates, seed_seen_from_current
 from src.evals import fetch_aa_models, find_new_evals
 from src.post import dry_run_enabled, post_with_media
@@ -204,20 +203,31 @@ def run_once(*, force_seed: bool = False) -> int:
         save_state(state)
         return 0
 
-    # Cap 3/day. If several evals land together, one ranked list, not six tweets.
+    # Cap 3/day. Several evals together → one tweet with up to 3 jumbotron photos.
     if len(ready) > 1 and budget_left >= 1:
-        batch = ready[: min(5, len(ready))]
+        batch = sorted(ready, key=lambda r: r["aa"].rank)[:BATCH_EVALS_PHOTOS]
         rows = [(r["name"], r["aa"].score, r["aa"].rank) for r in batch]
-        # Use open_closed of majority / first for caption tone; list post is neutral
         open_closed = batch[0]["open_closed"]
         caption = format_ranked_evals_list(rows, open_closed)
-        card_path = OUT_DIR / "evals_batch.png"
-        render_ranked_evals_card(rows=rows, lab_key=batch[0]["lab"], out_path=card_path)
+        card_paths: list[Path] = []
+        alts: list[str] = []
+        for r in batch:
+            slug = r["name"].lower().replace(" ", "_")[:60]
+            card_path = OUT_DIR / f"evals_{slug}.png"
+            render_evals_card(
+                model_name=r["name"],
+                lab_key=r["lab"],
+                score=r["aa"].score,
+                rank=r["aa"].rank,
+                out_path=card_path,
+            )
+            card_paths.append(card_path)
+            alts.append(format_alt_evals(r["name"], r["aa"].score, r["aa"].rank, r["open_closed"]))
         result = post_with_media(
             caption=caption,
-            media_path=card_path,
+            media_paths=card_paths,
+            alt_texts=alts,
             source_url="https://artificialanalysis.ai/",
-            alt_text=format_alt_ranked(rows),
             dry_run=dry,
         )
         for r in batch:

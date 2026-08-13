@@ -15,7 +15,7 @@ Two post types only: **SHIPPED** and **EVALS**.
 
 Skipped: fine-tunes, merges, GGUF re-uploads, app/CLI bumps, “now in the UI” of a model already posted, vendor self-benches, image/video models (v2).
 
-Every post is tagged **Open** or **Closed**. Cap **3 posts/day**. If several evals land together → one ranked list.
+Every post is tagged **Open** or **Closed**. Cap **3 posts/day**. If several evals land together → **one tweet with up to 3 jumbotron photos** (X image grid), ranked by Intelligence Index.
 
 ## How it works
 
@@ -133,7 +133,7 @@ Line 1 is the hook. Line 2 is the payoff (a comparable fact people can reply to)
 Pillow PNGs at **1600×900 (16:9)** — X’s native single-image timeline slot. Same bones every time; **lab color** is the only theme change. PNG, not JPEG (type survives recompress). Alt text is attached on upload.
 
 - **SHIPPED** — full-bleed lab color, giant condensed name that fills the well, lab SVG mark + OPEN/CLOSED pill, black lower-third `SHIPPED · LAB · EVALTAPE`, 35mm sprocket rails with the same mark as a film-edge print.
-- **EVALS** — matte black jumbotron, pixel-LED Intelligence Index in the lab’s brand accent, RANK n, lab SVG on the rail / top-right, `EVALTAPE · ARTIFICIAL ANALYSIS` footer.
+- **EVALS** — matte black jumbotron, pixel-LED Intelligence Index in the lab’s brand accent, RANK n, lab SVG on the rail / top-right, `EVALTAPE · ARTIFICIAL ANALYSIS` footer. A batch is the same card, up to three in one post.
 
 Lab marks live in `assets/logos/` (SVG). See `assets/logos/NOTICE.txt` for sources.
 

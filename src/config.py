@@ -10,6 +10,8 @@ OUT_DIR = ROOT / "out"
 STATE_PATH = ROOT / "state.json"
 AA_CACHE_MAX_AGE_SECONDS = 6 * 60 * 60  # cache AA heavily (1000 req/day)
 MAX_POSTS_PER_DAY = 3
+# When several evals land together: one tweet, up to 3 jumbotron photos (X's grid).
+BATCH_EVALS_PHOTOS = 3
 CARD_WIDTH = 1600
 CARD_HEIGHT = 900  # 16:9 — X's native single-image timeline slot
 

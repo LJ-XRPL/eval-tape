@@ -17,6 +17,7 @@ class PostResult:
     dry_run: bool
     caption: str
     media_path: str | None
+    media_paths: tuple[str, ...] = ()
 
 
 def dry_run_enabled() -> bool:
@@ -47,52 +48,73 @@ def _client():
 def post_with_media(
     *,
     caption: str,
-    media_path: Path,
     source_url: str,
+    media_path: Path | None = None,
+    media_paths: list[Path] | tuple[Path, ...] | None = None,
     alt_text: str | None = None,
+    alt_texts: list[str] | tuple[str, ...] | None = None,
     dry_run: bool | None = None,
 ) -> PostResult:
-    """Create tweet with image; put canonical URL in the first reply only."""
+    """Create tweet with 1–4 images; put canonical URL in the first reply only."""
     if "http://" in caption or "https://" in caption:
         raise ValueError("Caption must not contain URLs (costs more + throttled)")
     if "#" in caption:
         raise ValueError("Caption must not contain hashtags")
 
+    paths = [Path(p) for p in (media_paths or ([media_path] if media_path is not None else []))]
+    if not paths:
+        raise ValueError("media_path or media_paths required")
+    if len(paths) > 4:
+        raise ValueError("X allows at most 4 photos per tweet")
+
+    alts: list[str | None]
+    if alt_texts is not None:
+        alts = [(a or "")[:1000] or None for a in alt_texts]
+        if len(alts) != len(paths):
+            raise ValueError("alt_texts must match media_paths")
+    else:
+        alts = [((alt_text or "")[:1000] or None)] + [None] * (len(paths) - 1)
+
     is_dry = dry_run if dry_run is not None else dry_run_enabled()
-    media_path = Path(media_path)
-    alt = (alt_text or "")[:1000] or None
+    path_strs = tuple(str(p) for p in paths)
 
     if is_dry:
         log.info("DRY_RUN caption:\n%s", caption)
-        log.info("DRY_RUN media: %s", media_path)
-        if alt:
-            log.info("DRY_RUN alt: %s", alt)
+        log.info("DRY_RUN media (%s): %s", len(paths), ", ".join(path_strs))
+        for i, alt in enumerate(alts):
+            if alt:
+                log.info("DRY_RUN alt[%s]: %s", i, alt)
         log.info("DRY_RUN reply would be: %s", source_url)
         return PostResult(
             tweet_id=None,
             reply_id=None,
             dry_run=True,
             caption=caption,
-            media_path=str(media_path),
+            media_path=path_strs[0],
+            media_paths=path_strs,
         )
 
     client, api_v1 = _client()
-    media = api_v1.media_upload(filename=str(media_path))
-    media_id = media.media_id_string
-    if alt:
-        api_v1.create_media_metadata(media_id, alt_text=alt)
-    created = client.create_tweet(text=caption, media_ids=[media_id])
+    media_ids: list[str] = []
+    for path, alt in zip(paths, alts, strict=True):
+        media = api_v1.media_upload(filename=str(path))
+        media_id = media.media_id_string
+        if alt:
+            api_v1.create_media_metadata(media_id, alt_text=alt)
+        media_ids.append(media_id)
+    created = client.create_tweet(text=caption, media_ids=media_ids)
     tweet_id = str(created.data["id"])
     reply = client.create_tweet(
         text=source_url,
         in_reply_to_tweet_id=tweet_id,
     )
     reply_id = str(reply.data["id"])
-    log.info("Posted tweet %s reply %s", tweet_id, reply_id)
+    log.info("Posted tweet %s reply %s photos=%s", tweet_id, reply_id, len(media_ids))
     return PostResult(
         tweet_id=tweet_id,
         reply_id=reply_id,
         dry_run=False,
         caption=caption,
-        media_path=str(media_path),
+        media_path=path_strs[0],
+        media_paths=path_strs,
     )
