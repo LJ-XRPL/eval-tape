@@ -57,6 +57,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/introducing-gemini-3-7-flash/"
     },
+    "rss:google:gemini-and-pixel": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini and Pixel",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-17T08:33:47.842268+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
+    },
     "rss:openai:gpt-5-6-sol-at-up-to-14x-the-speed": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -72,8 +85,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-08-14"
+    "count": 1,
+    "date": "2026-08-17"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -631,6 +644,7 @@
     "hf:MiniMaxAI/MiniMax-Music3",
     "rss:openai:gpt-5-6-sol-at-up-to-14x-the-speed",
     "rss:google:gemini-3-7-flash",
-    "rss:amazon:nova-forge"
+    "rss:amazon:nova-forge",
+    "rss:google:gemini-and-pixel"
   ]
 }
