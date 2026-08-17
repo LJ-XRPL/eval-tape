@@ -44,6 +44,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/"
     },
+    "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "NVIDIA Nemotron 3.5 Lightning now available in Amazon SageMaker JumpStart",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-17T18:26:17.988971+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart/"
+    },
     "rss:google:gemini-3-7-flash": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -85,7 +98,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-08-17"
   },
   "seeded": true,
@@ -645,6 +658,7 @@
     "rss:openai:gpt-5-6-sol-at-up-to-14x-the-speed",
     "rss:google:gemini-3-7-flash",
     "rss:amazon:nova-forge",
-    "rss:google:gemini-and-pixel"
+    "rss:google:gemini-and-pixel",
+    "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
   ]
 }
