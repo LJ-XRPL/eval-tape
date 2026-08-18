@@ -83,6 +83,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
     },
+    "rss:openai:chatgpt-for-teens": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "ChatGPT for Teens",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-18T11:18:32.194751+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/chatgpt-for-teens"
+    },
     "rss:openai:gpt-5-6-sol-at-up-to-14x-the-speed": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -98,8 +111,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-08-17"
+    "count": 1,
+    "date": "2026-08-18"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -659,6 +672,7 @@
     "rss:google:gemini-3-7-flash",
     "rss:amazon:nova-forge",
     "rss:google:gemini-and-pixel",
-    "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart"
+    "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart",
+    "rss:openai:chatgpt-for-teens"
   ]
 }
