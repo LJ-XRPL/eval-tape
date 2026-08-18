@@ -31,6 +31,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
+    "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon Bedrock AgentCore payments is now generally available: Enabling agents to",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-18T19:48:48.825339+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/"
+    },
     "rss:amazon:nova-forge": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -108,10 +121,23 @@
       "shipped_at": "2026-08-13T17:27:19.152122+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/previewing-ultrafast"
+    },
+    "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Pacing model development in an era of cyber-critical capabilities",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-18T19:48:44.942408+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-08-18"
   },
   "seeded": true,
@@ -673,6 +699,8 @@
     "rss:amazon:nova-forge",
     "rss:google:gemini-and-pixel",
     "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart",
-    "rss:openai:chatgpt-for-teens"
+    "rss:openai:chatgpt-for-teens",
+    "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities",
+    "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to"
   ]
 }
