@@ -109,6 +109,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/chatgpt-for-teens"
     },
+    "rss:openai:gpt-5-6-luna": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-5.6 Luna",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-19T14:05:33.853078+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/replit"
+    },
     "rss:openai:gpt-5-6-sol-at-up-to-14x-the-speed": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -137,8 +150,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-08-18"
+    "count": 1,
+    "date": "2026-08-19"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -701,6 +714,7 @@
     "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart",
     "rss:openai:chatgpt-for-teens",
     "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities",
-    "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to"
+    "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to",
+    "rss:openai:gpt-5-6-luna"
   ]
 }
