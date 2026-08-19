@@ -135,6 +135,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/previewing-ultrafast"
     },
+    "rss:openai:offering-zero-data-retention-for-frontier-models": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Offering Zero Data Retention for frontier models",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-19T17:20:00.092977+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/our-commitment-to-zero-data-retention"
+    },
     "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -150,7 +163,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-08-19"
   },
   "seeded": true,
@@ -715,6 +728,7 @@
     "rss:openai:chatgpt-for-teens",
     "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities",
     "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to",
-    "rss:openai:gpt-5-6-luna"
+    "rss:openai:gpt-5-6-luna",
+    "rss:openai:offering-zero-data-retention-for-frontier-models"
   ]
 }
