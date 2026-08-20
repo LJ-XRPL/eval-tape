@@ -31,6 +31,45 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
+    "hf:google/tipsv1-g14": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "tipsv1 g14",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-20T16:29:01.841631+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/tipsv1-g14"
+    },
+    "hf:google/tipsv1-g14-lowres": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "tipsv1 g14 lowres",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-20T16:28:58.141244+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/tipsv1-g14-lowres"
+    },
+    "hf:google/tipsv1-so400m14": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "tipsv1 so400m14",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-20T16:29:05.486060+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/tipsv1-so400m14"
+    },
     "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -163,8 +202,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-08-19"
+    "count": 3,
+    "date": "2026-08-20"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -729,6 +768,9 @@
     "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities",
     "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to",
     "rss:openai:gpt-5-6-luna",
-    "rss:openai:offering-zero-data-retention-for-frontier-models"
+    "rss:openai:offering-zero-data-retention-for-frontier-models",
+    "hf:google/tipsv1-g14-lowres",
+    "hf:google/tipsv1-g14",
+    "hf:google/tipsv1-so400m14"
   ]
 }
