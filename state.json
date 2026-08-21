@@ -83,6 +83,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/"
     },
+    "rss:amazon:cross-region-inference-for-openai-gpt-5-6-models-on-amazon-be": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "cross-Region inference for OpenAI GPT-5.6 models on Amazon Be",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-21T00:45:32.291713+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
+    },
     "rss:amazon:nova-forge": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -134,6 +147,19 @@
       "shipped_at": "2026-08-17T08:33:47.842268+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
+    },
+    "rss:openai:ai-futures": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "AI Futures",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-21T00:45:25.639441+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-ai-futures"
     },
     "rss:openai:chatgpt-for-teens": {
       "aa_model_id": null,
@@ -199,11 +225,24 @@
       "shipped_at": "2026-08-18T19:48:44.942408+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
+    },
+    "rss:openai:stampli-cuts-launch-hours-by-68-using-chatgpt-work": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Stampli cuts launch hours by 68% using ChatGPT Work",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-21T00:45:28.912663+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/stampli"
     }
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-08-20"
+    "date": "2026-08-21"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -771,6 +810,9 @@
     "rss:openai:offering-zero-data-retention-for-frontier-models",
     "hf:google/tipsv1-g14-lowres",
     "hf:google/tipsv1-g14",
-    "hf:google/tipsv1-so400m14"
+    "hf:google/tipsv1-so400m14",
+    "rss:openai:ai-futures",
+    "rss:openai:stampli-cuts-launch-hours-by-68-using-chatgpt-work",
+    "rss:amazon:cross-region-inference-for-openai-gpt-5-6-models-on-amazon-be"
   ]
 }
