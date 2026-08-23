@@ -83,6 +83,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/google/tipsv1-l14"
     },
+    "hf:google/tipsv1-s14": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "tipsv1 s14",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-23T00:46:24.093113+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/tipsv1-s14"
+    },
     "hf:google/tipsv1-so400m14": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -280,8 +293,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-08-22"
+    "count": 1,
+    "date": "2026-08-23"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -855,6 +868,7 @@
     "rss:amazon:cross-region-inference-for-openai-gpt-5-6-models-on-amazon-be",
     "rss:amazon:build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-q",
     "hf:google/tipsv1-l14",
-    "hf:google/tipsv1-b14"
+    "hf:google/tipsv1-b14",
+    "hf:google/tipsv1-s14"
   ]
 }
