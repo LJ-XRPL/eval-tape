@@ -148,6 +148,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
     },
+    "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "new Ray capabilities on SageMaker HyperPod",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-24T19:53:04.491018+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod/"
+    },
     "rss:amazon:nova-forge": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -294,7 +307,7 @@
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-08-23"
+    "date": "2026-08-24"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -869,6 +882,7 @@
     "rss:amazon:build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-q",
     "hf:google/tipsv1-l14",
     "hf:google/tipsv1-b14",
-    "hf:google/tipsv1-s14"
+    "hf:google/tipsv1-s14",
+    "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod"
   ]
 }
