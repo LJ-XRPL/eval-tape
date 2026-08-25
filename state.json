@@ -303,11 +303,24 @@
       "shipped_at": "2026-08-21T00:45:28.912663+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/stampli"
+    },
+    "rss:openai:the-admin-plugin-for-chatgpt-work-and-codex": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "the Admin plugin for ChatGPT Work and Codex",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-25T17:54:14.548026+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-admin-plugin"
     }
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-08-24"
+    "date": "2026-08-25"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -883,6 +896,7 @@
     "hf:google/tipsv1-l14",
     "hf:google/tipsv1-b14",
     "hf:google/tipsv1-s14",
-    "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod"
+    "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod",
+    "rss:openai:the-admin-plugin-for-chatgpt-work-and-codex"
   ]
 }
