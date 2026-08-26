@@ -187,6 +187,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart/"
     },
+    "rss:google:gemini-3-5-transcribe": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 3.5 Transcribe",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-26T18:12:31.494920+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/"
+    },
     "rss:google:gemini-3-7-flash": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -320,7 +333,7 @@
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-08-25"
+    "date": "2026-08-26"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -897,6 +910,7 @@
     "hf:google/tipsv1-b14",
     "hf:google/tipsv1-s14",
     "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod",
-    "rss:openai:the-admin-plugin-for-chatgpt-work-and-codex"
+    "rss:openai:the-admin-plugin-for-chatgpt-work-and-codex",
+    "rss:google:gemini-3-5-transcribe"
   ]
 }
