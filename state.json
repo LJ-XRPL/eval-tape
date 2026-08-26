@@ -278,6 +278,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/previewing-ultrafast"
     },
+    "rss:openai:intelligence-age": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Intelligence Age",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-26T23:53:32.156273+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-ai-futures"
+    },
     "rss:openai:offering-zero-data-retention-for-frontier-models": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -332,7 +345,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-08-26"
   },
   "seeded": true,
@@ -911,6 +924,7 @@
     "hf:google/tipsv1-s14",
     "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod",
     "rss:openai:the-admin-plugin-for-chatgpt-work-and-codex",
-    "rss:google:gemini-3-5-transcribe"
+    "rss:google:gemini-3-5-transcribe",
+    "rss:openai:intelligence-age"
   ]
 }
