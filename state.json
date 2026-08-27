@@ -109,6 +109,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/google/tipsv1-so400m14"
     },
+    "hf:microsoft/SQuadGen": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "SQuadGen",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-27T17:08:53.625696+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/SQuadGen"
+    },
     "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -225,6 +238,19 @@
       "shipped_at": "2026-08-17T08:33:47.842268+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
+    },
+    "rss:google:gemini-omni-1-1-flash-lets-you-build-with-more": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini Omni 1.1 Flash lets you build with more",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-27T17:08:50.546769+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/"
     },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
@@ -346,7 +372,7 @@
   },
   "posts_today": {
     "count": 2,
-    "date": "2026-08-26"
+    "date": "2026-08-27"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -925,6 +951,8 @@
     "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod",
     "rss:openai:the-admin-plugin-for-chatgpt-work-and-codex",
     "rss:google:gemini-3-5-transcribe",
-    "rss:openai:intelligence-age"
+    "rss:openai:intelligence-age",
+    "rss:google:gemini-omni-1-1-flash-lets-you-build-with-more",
+    "hf:microsoft/SQuadGen"
   ]
 }
