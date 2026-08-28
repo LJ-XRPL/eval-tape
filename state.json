@@ -31,6 +31,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
+    "hf:google/timesfm-3.0-pytorch": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "timesfm 3.0 pytorch",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-28T01:35:47.185146+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/timesfm-3.0-pytorch"
+    },
     "hf:google/tipsv1-b14": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -199,6 +212,32 @@
       "shipped_at": "2026-08-17T18:26:17.988971+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart/"
+    },
+    "rss:amazon:openai-models-on-amazon-bedrock-for-in-country-inferencing-in": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "OpenAI models on Amazon Bedrock for in-country inferencing in",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-28T01:35:43.932278+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india/"
+    },
+    "rss:anthropic:previewing-the-model-hardware-standard": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Previewing the Model Hardware Standard",
+      "open_closed": "closed",
+      "shipped_at": "2026-08-28T01:35:40.528378+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
     },
     "rss:google:gemini-3-5-transcribe": {
       "aa_model_id": null,
@@ -371,8 +410,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-08-27"
+    "count": 3,
+    "date": "2026-08-28"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -953,6 +992,9 @@
     "rss:google:gemini-3-5-transcribe",
     "rss:openai:intelligence-age",
     "rss:google:gemini-omni-1-1-flash-lets-you-build-with-more",
-    "hf:microsoft/SQuadGen"
+    "hf:microsoft/SQuadGen",
+    "rss:anthropic:previewing-the-model-hardware-standard",
+    "rss:amazon:openai-models-on-amazon-bedrock-for-in-country-inferencing-in",
+    "hf:google/timesfm-3.0-pytorch"
   ]
 }
