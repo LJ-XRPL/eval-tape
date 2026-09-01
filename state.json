@@ -161,6 +161,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas/"
     },
+    "rss:amazon:claude-fable-5-1-on-aws": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Fable 5.1 on AWS",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-01T21:31:36.799047+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/"
+    },
     "rss:amazon:cross-region-inference-for-openai-gpt-5-6-models-on-amazon-be": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -410,8 +423,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-08-28"
+    "count": 1,
+    "date": "2026-09-01"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -995,6 +1008,7 @@
     "hf:microsoft/SQuadGen",
     "rss:anthropic:previewing-the-model-hardware-standard",
     "rss:amazon:openai-models-on-amazon-bedrock-for-in-country-inferencing-in",
-    "hf:google/timesfm-3.0-pytorch"
+    "hf:google/timesfm-3.0-pytorch",
+    "rss:amazon:claude-fable-5-1-on-aws"
   ]
 }
