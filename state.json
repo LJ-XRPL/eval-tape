@@ -395,6 +395,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/previewing-ultrafast"
     },
+    "rss:openai:gpt-6-astra": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 Astra",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-03T22:02:32.646023+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/legora-financial-statement-review-with-astra"
+    },
     "rss:openai:intelligence-age": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -462,7 +475,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-09-03"
   },
   "seeded": true,
@@ -1051,6 +1064,7 @@
     "rss:amazon:claude-fable-5-1-on-aws",
     "rss:google:gemini-3-8-flash-and-3-8-flash-cyber",
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio",
-    "rss:google:weathernext-3"
+    "rss:google:weathernext-3",
+    "rss:openai:gpt-6-astra"
   ]
 }
