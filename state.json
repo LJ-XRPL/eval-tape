@@ -330,6 +330,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/"
     },
+    "rss:google:weathernext-3": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "WeatherNext 3",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-03T16:36:15.941941+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/"
+    },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -449,8 +462,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-09-02"
+    "count": 1,
+    "date": "2026-09-03"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1037,6 +1050,7 @@
     "hf:google/timesfm-3.0-pytorch",
     "rss:amazon:claude-fable-5-1-on-aws",
     "rss:google:gemini-3-8-flash-and-3-8-flash-cyber",
-    "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio"
+    "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio",
+    "rss:google:weathernext-3"
   ]
 }
