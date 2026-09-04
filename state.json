@@ -174,6 +174,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas/"
     },
+    "rss:amazon:build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Build a Physical AI model factory with NVIDIA Cosmos 3 on SageMaker HyperPod",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-04T17:18:02.714119+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod/"
+    },
     "rss:amazon:claude-fable-5-1-on-aws": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -475,8 +488,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-09-03"
+    "count": 1,
+    "date": "2026-09-04"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1065,6 +1078,7 @@
     "rss:google:gemini-3-8-flash-and-3-8-flash-cyber",
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio",
     "rss:google:weathernext-3",
-    "rss:openai:gpt-6-astra"
+    "rss:openai:gpt-6-astra",
+    "rss:amazon:build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod"
   ]
 }
