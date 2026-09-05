@@ -95,7 +95,7 @@ def format_ranked_evals_list(
 
     # Sequence-with-reveal: hook, then the board, then the thesis.
     lines = ["Independent evals just landed:"]
-    for name, score, rank in rows[:5]:
+    for name, score, rank in rows[:3]:
         lines.append(f"{rank}. {name} — {int(round(score))}")
     lines.append("Artificial Analysis. Not vendor scorecards.")
     return "\n".join(lines)

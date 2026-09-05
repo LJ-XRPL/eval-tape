@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any
@@ -15,6 +16,10 @@ import requests
 from src.config import HF_API_URL, LABS, SKIP_HF_TAGS, SKIP_NAME_PATTERNS, SHIP_HINTS, Lab
 
 log = logging.getLogger(__name__)
+
+_UA = {"User-Agent": "EvalTapeBot/1.0 (+https://github.com/LJ-XRPL/eval-tape)"}
+FETCH_TIMEOUT_SECONDS = 8
+FETCH_WORKERS = 16
 
 _SKIP_RE = re.compile("|".join(f"(?:{p})" for p in SKIP_NAME_PATTERNS), re.IGNORECASE)
 _SHIP_HINT_RE = re.compile("|".join(f"(?:{p})" for p in SHIP_HINTS), re.IGNORECASE)
@@ -119,122 +124,150 @@ def extract_model_name_from_title(title: str, lab: Lab) -> str | None:
     return None
 
 
-def fetch_rss_candidates(session: requests.Session | None = None) -> list[Candidate]:
-    session = session or requests.Session()
+def _http_get(url: str, **kwargs: Any) -> requests.Response:
+    return requests.get(url, headers=_UA, timeout=FETCH_TIMEOUT_SECONDS, **kwargs)
+
+
+def _parse_rss_feed(lab: Lab, url: str, content: bytes) -> list[Candidate]:
     out: list[Candidate] = []
-    for lab in LABS:
-        for url in lab.rss_urls:
-            try:
-                resp = session.get(url, timeout=30)
-                resp.raise_for_status()
-                feed = feedparser.parse(resp.content)
-            except Exception as exc:  # noqa: BLE001 — network resilience
-                log.warning("RSS fetch failed %s: %s", url, exc)
-                continue
-            for entry in feed.entries:
-                title = normalize_name(getattr(entry, "title", "") or "")
-                link = getattr(entry, "link", "") or url
-                if not title or not _SHIP_HINT_RE.search(title):
-                    continue
-                if should_skip_model(title):
-                    continue
-                matched = match_lab(title) or lab
-                if matched.key != lab.key and matched.kind == "closed" and lab.kind == "closed":
-                    matched = lab
-                name = extract_model_name_from_title(title, matched)
-                if not name:
-                    continue
-                if not is_base_family_candidate(name, matched):
-                    continue
-                cid = f"rss:{matched.key}:{_slug(name)}"
-                out.append(
-                    Candidate(
-                        id=cid,
-                        name=name,
-                        lab_key=matched.key,
-                        open_closed=matched.kind,
-                        source_url=link,
-                        detected_via="rss",
-                        raw_title=title,
-                    )
-                )
+    feed = feedparser.parse(content)
+    for entry in feed.entries:
+        title = normalize_name(getattr(entry, "title", "") or "")
+        link = getattr(entry, "link", "") or url
+        if not title or not _SHIP_HINT_RE.search(title):
+            continue
+        if should_skip_model(title):
+            continue
+        matched = match_lab(title) or lab
+        if matched.key != lab.key and matched.kind == "closed" and lab.kind == "closed":
+            matched = lab
+        name = extract_model_name_from_title(title, matched)
+        if not name:
+            continue
+        if not is_base_family_candidate(name, matched):
+            continue
+        cid = f"rss:{matched.key}:{_slug(name)}"
+        out.append(
+            Candidate(
+                id=cid,
+                name=name,
+                lab_key=matched.key,
+                open_closed=matched.kind,
+                source_url=link,
+                detected_via="rss",
+                raw_title=title,
+            )
+        )
+    return out
+
+
+def _fetch_one_rss(lab: Lab, url: str) -> list[Candidate]:
+    try:
+        resp = _http_get(url)
+        resp.raise_for_status()
+        return _parse_rss_feed(lab, url, resp.content)
+    except Exception as exc:  # noqa: BLE001 — network resilience
+        log.warning("RSS fetch failed %s: %s", url, exc)
+        return []
+
+
+def fetch_rss_candidates(session: requests.Session | None = None) -> list[Candidate]:
+    del session  # per-request client; Session is not thread-safe
+    jobs = [(lab, url) for lab in LABS for url in lab.rss_urls]
+    out: list[Candidate] = []
+    with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
+        futs = [pool.submit(_fetch_one_rss, lab, url) for lab, url in jobs]
+        for fut in as_completed(futs):
+            out.extend(fut.result())
     return _dedupe(out)
 
 
-def fetch_hf_candidates(session: requests.Session | None = None) -> list[Candidate]:
-    session = session or requests.Session()
+def _parse_hf_org(lab: Lab, org: str, models: list[dict[str, Any]]) -> list[Candidate]:
     out: list[Candidate] = []
+    for item in models:
+        model_id = item.get("modelId") or item.get("id") or ""
+        if not model_id or "/" not in model_id:
+            continue
+        org_name, repo = model_id.split("/", 1)
+        if org_name != org:
+            continue
+        tags = list(item.get("tags") or [])
+        pipeline_tag = item.get("pipeline_tag")
+        display = repo.replace("-", " ")
+        card = item.get("cardData") or {}
+        if isinstance(card, dict) and card.get("model_name"):
+            display = str(card["model_name"])
+
+        matched = lab
+        if lab.key == "gemma" and "gemma" not in model_id.lower():
+            continue
+        if lab.key != "gemma":
+            guessed = match_lab(model_id, prefer_open_family=True)
+            if guessed:
+                matched = guessed
+
+        if should_skip_model(display, tags=tags, pipeline_tag=pipeline_tag):
+            continue
+        if should_skip_model(model_id, tags=tags, pipeline_tag=pipeline_tag):
+            continue
+        if not is_base_family_candidate(model_id + " " + display, matched):
+            continue
+        if any(t.startswith("adapter") or t == "peft" for t in tags):
+            continue
+
+        pretty = _prettify_hf_name(repo, matched)
+        cid = f"hf:{model_id}"
+        out.append(
+            Candidate(
+                id=cid,
+                name=pretty,
+                lab_key=matched.key,
+                open_closed=matched.kind,
+                source_url=f"https://huggingface.co/{quote(model_id)}",
+                detected_via="hf",
+                raw_title=model_id,
+            )
+        )
+    return out
+
+
+def _fetch_one_hf(lab: Lab, org: str) -> list[Candidate]:
+    try:
+        resp = _http_get(
+            HF_API_URL,
+            params={
+                "author": org,
+                "sort": "createdAt",
+                "direction": "-1",
+                "limit": 30,
+                "full": "true",
+            },
+        )
+        resp.raise_for_status()
+        models = resp.json()
+        if not isinstance(models, list):
+            return []
+        return _parse_hf_org(lab, org, models)
+    except Exception as exc:  # noqa: BLE001
+        log.warning("HF fetch failed %s: %s", org, exc)
+        return []
+
+
+def fetch_hf_candidates(session: requests.Session | None = None) -> list[Candidate]:
+    del session
+    jobs: list[tuple[Lab, str]] = []
     seen_orgs: set[str] = set()
     for lab in LABS:
         for org in lab.hf_orgs:
             if org in seen_orgs and lab.key != "gemma":
                 continue
             seen_orgs.add(org)
-            try:
-                # Official org models only — do not scrape random community uploads.
-                resp = session.get(
-                    HF_API_URL,
-                    params={
-                        "author": org,
-                        "sort": "createdAt",
-                        "direction": "-1",
-                        "limit": 30,
-                        "full": "true",
-                    },
-                    timeout=30,
-                )
-                resp.raise_for_status()
-                models = resp.json()
-            except Exception as exc:  # noqa: BLE001
-                log.warning("HF fetch failed %s: %s", org, exc)
-                continue
-
-            for item in models:
-                model_id = item.get("modelId") or item.get("id") or ""
-                if not model_id or "/" not in model_id:
-                    continue
-                org_name, repo = model_id.split("/", 1)
-                if org_name != org:
-                    continue
-                tags = list(item.get("tags") or [])
-                pipeline_tag = item.get("pipeline_tag")
-                display = repo.replace("-", " ")
-                # Prefer cardData model name when present
-                card = item.get("cardData") or {}
-                if isinstance(card, dict) and card.get("model_name"):
-                    display = str(card["model_name"])
-
-                matched = lab
-                if lab.key == "gemma" and "gemma" not in model_id.lower():
-                    continue
-                if lab.key != "gemma":
-                    guessed = match_lab(model_id, prefer_open_family=True)
-                    if guessed:
-                        matched = guessed
-
-                if should_skip_model(display, tags=tags, pipeline_tag=pipeline_tag):
-                    continue
-                if should_skip_model(model_id, tags=tags, pipeline_tag=pipeline_tag):
-                    continue
-                if not is_base_family_candidate(model_id + " " + display, matched):
-                    continue
-                # Skip tiny adapters / spaces of already-known families without size signal
-                if any(t.startswith("adapter") or t == "peft" for t in tags):
-                    continue
-
-                pretty = _prettify_hf_name(repo, matched)
-                cid = f"hf:{model_id}"
-                out.append(
-                    Candidate(
-                        id=cid,
-                        name=pretty,
-                        lab_key=matched.key,
-                        open_closed=matched.kind,
-                        source_url=f"https://huggingface.co/{quote(model_id)}",
-                        detected_via="hf",
-                        raw_title=model_id,
-                    )
-                )
+            jobs.append((lab, org))
+    out: list[Candidate] = []
+    with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
+        futs = [pool.submit(_fetch_one_hf, lab, org) for lab, org in jobs]
+        for fut in as_completed(futs):
+            out.extend(fut.result())
     return _dedupe(out)
 
 
@@ -257,10 +290,16 @@ def filter_new_candidates(
     return fresh
 
 
+def collect_candidates() -> list[Candidate]:
+    """RSS and HF in parallel so a slow feed does not delay the other source."""
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        rss_f = pool.submit(fetch_rss_candidates)
+        hf_f = pool.submit(fetch_hf_candidates)
+        return _dedupe(rss_f.result() + hf_f.result())
+
+
 def detect_candidates(state: dict[str, Any]) -> list[Candidate]:
-    session = requests.Session()
-    session.headers.update({"User-Agent": "EvalTapeBot/1.0 (+https://github.com/LJ-XRPL/eval-tape)"})
-    candidates = fetch_rss_candidates(session) + fetch_hf_candidates(session)
+    candidates = collect_candidates()
     seen = set(state.get("seen_candidate_ids") or [])
     shipped_names = {m.get("name", "") for m in (state.get("posted_models") or {}).values()}
     return filter_new_candidates(candidates, seen_ids=seen, shipped_names=shipped_names)
@@ -303,9 +342,7 @@ def _dedupe(candidates: list[Candidate]) -> list[Candidate]:
 
 def seed_seen_from_current(state: dict[str, Any]) -> int:
     """First run: mark current RSS/HF surface as seen, post NOTHING."""
-    session = requests.Session()
-    session.headers.update({"User-Agent": "EvalTapeBot/1.0 (+https://github.com/LJ-XRPL/eval-tape)"})
-    candidates = fetch_rss_candidates(session) + fetch_hf_candidates(session)
+    candidates = collect_candidates()
     before = len(state.get("seen_candidate_ids") or [])
     for c in candidates:
         if c.id not in state["seen_candidate_ids"]:
