@@ -434,6 +434,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/previewing-ultrafast"
     },
+    "rss:openai:gpt-5-6-sol-helps-run-quantum-computing-exp": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-5.6 Sol helps run quantum computing exp",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-08T20:48:02.834944+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/codex-quantum-computing-experiments"
+    },
     "rss:openai:gpt-6-astra": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -514,7 +527,7 @@
     }
   },
   "posts_today": {
-    "count": 2,
+    "count": 3,
     "date": "2026-09-08"
   },
   "seeded": true,
@@ -1107,6 +1120,7 @@
     "rss:openai:gpt-6-astra",
     "rss:amazon:build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod",
     "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2",
-    "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1"
+    "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1",
+    "rss:openai:gpt-5-6-sol-helps-run-quantum-computing-exp"
   ]
 }
