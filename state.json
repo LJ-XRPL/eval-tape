@@ -213,6 +213,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
     },
+    "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Govern models with MLflow and Amazon SageMaker AI Model Registry sync: Part 1",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-08T18:00:32.018374+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1/"
+    },
+    "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Govern models with MLflow and Amazon SageMaker AI Model Registry sync: Part 2",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-08T18:00:27.884119+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2/"
+    },
     "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -488,8 +514,8 @@
     }
   },
   "posts_today": {
-    "count": 1,
-    "date": "2026-09-04"
+    "count": 2,
+    "date": "2026-09-08"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1079,6 +1105,8 @@
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio",
     "rss:google:weathernext-3",
     "rss:openai:gpt-6-astra",
-    "rss:amazon:build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod"
+    "rss:amazon:build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod",
+    "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2",
+    "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1"
   ]
 }
