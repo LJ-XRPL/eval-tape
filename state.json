@@ -239,6 +239,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2/"
     },
+    "rss:amazon:gpt-6-astra-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "GPT-6 Astra on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-09T01:20:51.111493+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/"
+    },
     "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -408,6 +421,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/chatgpt-for-teens"
     },
+    "rss:openai:chatgpt-images-2-5": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "ChatGPT Images 2.5",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-09T01:20:47.742914+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-chatgpt-images-2-5"
+    },
     "rss:openai:gpt-5-6-luna": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -527,8 +553,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-08"
+    "count": 2,
+    "date": "2026-09-09"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1121,6 +1147,8 @@
     "rss:amazon:build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod",
     "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-2",
     "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1",
-    "rss:openai:gpt-5-6-sol-helps-run-quantum-computing-exp"
+    "rss:openai:gpt-5-6-sol-helps-run-quantum-computing-exp",
+    "rss:openai:chatgpt-images-2-5",
+    "rss:amazon:gpt-6-astra-on-amazon-bedrock"
   ]
 }
