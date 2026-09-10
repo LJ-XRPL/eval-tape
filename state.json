@@ -434,6 +434,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-ai-futures"
     },
+    "rss:openai:chatgpt-for-financial-services": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "ChatGPT for Financial Services",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-10T18:51:02.070872+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-chatgpt-financial-services"
+    },
     "rss:openai:chatgpt-for-teens": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -592,7 +605,7 @@
     }
   },
   "posts_today": {
-    "count": 2,
+    "count": 3,
     "date": "2026-09-10"
   },
   "seeded": true,
@@ -1191,6 +1204,7 @@
     "rss:amazon:gpt-6-astra-on-amazon-bedrock",
     "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp",
     "hf:deepseek-ai/DeepSeek-V4.1-Flash",
-    "hf:google/gnm-v3"
+    "hf:google/gnm-v3",
+    "rss:openai:chatgpt-for-financial-services"
   ]
 }
