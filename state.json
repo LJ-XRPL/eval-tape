@@ -31,6 +31,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
+    "hf:deepseek-ai/DeepSeek-V4.1-Flash": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "deepseek",
+      "name": "Deepseek V4.1 Flash",
+      "open_closed": "open",
+      "shipped_at": "2026-09-10T06:13:27.352624+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    },
     "hf:google/timesfm-3.0-pytorch": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -566,8 +579,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-09"
+    "count": 1,
+    "date": "2026-09-10"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1163,6 +1176,7 @@
     "rss:openai:gpt-5-6-sol-helps-run-quantum-computing-exp",
     "rss:openai:chatgpt-images-2-5",
     "rss:amazon:gpt-6-astra-on-amazon-bedrock",
-    "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp"
+    "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp",
+    "hf:deepseek-ai/DeepSeek-V4.1-Flash"
   ]
 }
