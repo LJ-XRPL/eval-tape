@@ -44,6 +44,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
     },
+    "hf:google/gnm-v3": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "gnm V3",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-10T15:32:41.918839+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/gnm-v3"
+    },
     "hf:google/timesfm-3.0-pytorch": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -579,7 +592,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-09-10"
   },
   "seeded": true,
@@ -1177,6 +1190,7 @@
     "rss:openai:chatgpt-images-2-5",
     "rss:amazon:gpt-6-astra-on-amazon-bedrock",
     "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp",
-    "hf:deepseek-ai/DeepSeek-V4.1-Flash"
+    "hf:deepseek-ai/DeepSeek-V4.1-Flash",
+    "hf:google/gnm-v3"
   ]
 }
