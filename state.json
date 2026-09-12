@@ -200,6 +200,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-is-now-generally-available-on-desktop/"
     },
+    "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Beyond the price per token: Choosing the right OpenAI model on Amazon Bedrock fo",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-12T01:20:52.253351+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-for-your-workload/"
+    },
     "rss:amazon:build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-q": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -290,6 +303,19 @@
       "shipped_at": "2026-09-09T01:20:51.111493+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/"
+    },
+    "rss:amazon:model-agnostic-pii-detection-with-llms": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Model-agnostic PII detection with LLMs",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-12T01:20:55.207232+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/model-agnostic-pii-detection-with-llms/"
     },
     "rss:amazon:new-ray-capabilities-on-sagemaker-hyperpod": {
       "aa_model_id": null,
@@ -551,6 +577,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/legora-financial-statement-review-with-astra"
     },
+    "rss:openai:gpt-6-astra-with-end-to-end-systems": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 Astra with end-to-end systems",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-12T01:20:49.235078+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    },
     "rss:openai:intelligence-age": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -645,7 +684,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-09-11"
+    "date": "2026-09-12"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1247,6 +1286,9 @@
     "rss:openai:chatgpt-for-financial-services",
     "rss:openai:the-agents-api",
     "rss:amazon:reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching",
-    "rss:amazon:amazon-quick-is-now-generally-available-on-desktop"
+    "rss:amazon:amazon-quick-is-now-generally-available-on-desktop",
+    "rss:openai:gpt-6-astra-with-end-to-end-systems",
+    "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo",
+    "rss:amazon:model-agnostic-pii-detection-with-llms"
   ]
 }
