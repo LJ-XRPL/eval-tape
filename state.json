@@ -382,6 +382,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching/"
     },
+    "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "The generative AI customization spectrum: From prompt engineering to custom mode",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-14T19:54:17.270331+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/"
+    },
     "rss:anthropic:previewing-the-model-hardware-standard": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -683,8 +696,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-12"
+    "count": 1,
+    "date": "2026-09-14"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1289,6 +1302,7 @@
     "rss:amazon:amazon-quick-is-now-generally-available-on-desktop",
     "rss:openai:gpt-6-astra-with-end-to-end-systems",
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo",
-    "rss:amazon:model-agnostic-pii-detection-with-llms"
+    "rss:amazon:model-agnostic-pii-detection-with-llms",
+    "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode"
   ]
 }
