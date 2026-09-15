@@ -239,6 +239,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/build-a-physical-ai-model-factory-with-nvidia-cosmos-3-on-sagemaker-hyperpod/"
     },
+    "rss:amazon:build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-mode": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Build an AI-powered product tagging system with Amazon SageMaker serverless mode",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-15T19:46:31.506364+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/"
+    },
     "rss:amazon:claude-fable-5-1-on-aws": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -459,6 +472,19 @@
       "shipped_at": "2026-09-02T19:08:11.270427+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/"
+    },
+    "rss:google:gemini-3-8-live-and-3-8-live-extended-thinking": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-15T19:46:27.706703+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
     },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
@@ -709,7 +735,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-09-15"
   },
   "seeded": true,
@@ -1317,6 +1343,8 @@
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo",
     "rss:amazon:model-agnostic-pii-detection-with-llms",
     "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode",
-    "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo"
+    "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo",
+    "rss:google:gemini-3-8-live-and-3-8-live-extended-thinking",
+    "rss:amazon:build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-mode"
   ]
 }
