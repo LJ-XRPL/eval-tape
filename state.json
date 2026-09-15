@@ -304,6 +304,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/"
     },
+    "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "instance preference lists for Amazon SageMaker AI training jo",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-15T16:05:59.292148+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/"
+    },
     "rss:amazon:model-agnostic-pii-detection-with-llms": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -697,7 +710,7 @@
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-09-14"
+    "date": "2026-09-15"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1303,6 +1316,7 @@
     "rss:openai:gpt-6-astra-with-end-to-end-systems",
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo",
     "rss:amazon:model-agnostic-pii-detection-with-llms",
-    "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode"
+    "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode",
+    "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo"
   ]
 }
