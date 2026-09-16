@@ -681,6 +681,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/our-commitment-to-zero-data-retention"
     },
+    "rss:openai:our-framework-for-reporting-model-misalignment": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Our framework for reporting model misalignment",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-16T23:59:53.655381+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/model-misalignment-reporting-framework"
+    },
     "rss:openai:pacing-model-development-in-an-era-of-cyber-critical-capabilities": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -748,7 +761,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-09-16"
   },
   "seeded": true,
@@ -1359,6 +1372,7 @@
     "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo",
     "rss:google:gemini-3-8-live-and-3-8-live-extended-thinking",
     "rss:amazon:build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-mode",
-    "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills"
+    "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills",
+    "rss:openai:our-framework-for-reporting-model-misalignment"
   ]
 }
