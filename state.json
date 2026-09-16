@@ -317,6 +317,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/"
     },
+    "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Improving HCLS AI reasoning with open-source agent skills",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-16T21:55:38.912460+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/improving-hcls-ai-reasoning-with-open-source-agent-skills/"
+    },
     "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -735,8 +748,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-15"
+    "count": 1,
+    "date": "2026-09-16"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1345,6 +1358,7 @@
     "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode",
     "rss:amazon:instance-preference-lists-for-amazon-sagemaker-ai-training-jo",
     "rss:google:gemini-3-8-live-and-3-8-live-extended-thinking",
-    "rss:amazon:build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-mode"
+    "rss:amazon:build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-mode",
+    "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills"
   ]
 }
