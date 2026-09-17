@@ -447,6 +447,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
     },
+    "rss:anthropic:the-life-sciences-verification-program": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "the Life Sciences Verification Program",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-17T18:24:05.770432+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/life-sciences-verification-program"
+    },
     "rss:google:gemini-3-5-transcribe": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -761,8 +774,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-09-16"
+    "count": 1,
+    "date": "2026-09-17"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1373,6 +1386,7 @@
     "rss:google:gemini-3-8-live-and-3-8-live-extended-thinking",
     "rss:amazon:build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-mode",
     "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills",
-    "rss:openai:our-framework-for-reporting-model-misalignment"
+    "rss:openai:our-framework-for-reporting-model-misalignment",
+    "rss:anthropic:the-life-sciences-verification-program"
   ]
 }
