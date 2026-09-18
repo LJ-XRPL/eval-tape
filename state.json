@@ -200,6 +200,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-is-now-generally-available-on-desktop/"
     },
+    "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon SageMaker HyperPod Inference Gateway",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-18T16:50:40.505570+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/"
+    },
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -278,6 +291,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
     },
+    "rss:amazon:deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Deploy Hugging Face models on Amazon SageMaker AI with coding agents",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-18T16:50:37.148664+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/"
+    },
     "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -342,6 +368,19 @@
       "shipped_at": "2026-09-15T16:05:59.292148+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/"
+    },
+    "rss:amazon:migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Migrating multi-model AI agents to Amazon Bedrock AgentCore runtime",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-18T16:50:33.753034+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime/"
     },
     "rss:amazon:model-agnostic-pii-detection-with-llms": {
       "aa_model_id": null,
@@ -787,8 +826,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-09-17"
+    "count": 3,
+    "date": "2026-09-18"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1401,6 +1440,9 @@
     "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills",
     "rss:openai:our-framework-for-reporting-model-misalignment",
     "rss:anthropic:the-life-sciences-verification-program",
-    "rss:openai:astra-for-law"
+    "rss:openai:astra-for-law",
+    "rss:amazon:migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime",
+    "rss:amazon:deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents",
+    "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway"
   ]
 }
