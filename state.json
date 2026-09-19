@@ -837,6 +837,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-the-agents-api"
     },
+    "rss:openai:the-australian-youth-safety-blueprint": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "the Australian Youth Safety Blueprint",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-19T07:28:09.510647+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/australian-youth-safety-blueprint"
+    },
     "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -852,7 +865,7 @@
     }
   },
   "posts_today": {
-    "count": 2,
+    "count": 3,
     "date": "2026-09-19"
   },
   "seeded": true,
@@ -1471,6 +1484,7 @@
     "rss:amazon:deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents",
     "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway",
     "rss:amazon:amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
-    "rss:kimi:kimi-k3-on-amazon-bedrock"
+    "rss:kimi:kimi-k3-on-amazon-bedrock",
+    "rss:openai:the-australian-youth-safety-blueprint"
   ]
 }
