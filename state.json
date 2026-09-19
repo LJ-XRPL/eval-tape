@@ -213,6 +213,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/"
     },
+    "rss:amazon:amazon-sagemaker-inference-2026-year-to-date-launches-in-review": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-19T02:21:12.562283+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/"
+    },
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -590,6 +603,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/"
     },
+    "rss:kimi:kimi-k3-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "kimi",
+      "name": "Kimi K3 on Amazon Bedrock",
+      "open_closed": "open",
+      "shipped_at": "2026-09-19T02:21:15.849324+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/"
+    },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -826,8 +852,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-18"
+    "count": 2,
+    "date": "2026-09-19"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1443,6 +1469,8 @@
     "rss:openai:astra-for-law",
     "rss:amazon:migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime",
     "rss:amazon:deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents",
-    "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway"
+    "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway",
+    "rss:amazon:amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
+    "rss:kimi:kimi-k3-on-amazon-bedrock"
   ]
 }
