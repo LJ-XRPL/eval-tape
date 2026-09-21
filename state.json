@@ -356,6 +356,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/"
     },
+    "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Grok 4.6 is now available in Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-21T23:45:19.337725+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock/"
+    },
     "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -865,8 +878,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-19"
+    "count": 1,
+    "date": "2026-09-21"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1485,6 +1498,7 @@
     "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway",
     "rss:amazon:amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
     "rss:kimi:kimi-k3-on-amazon-bedrock",
-    "rss:openai:the-australian-youth-safety-blueprint"
+    "rss:openai:the-australian-youth-safety-blueprint",
+    "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock"
   ]
 }
