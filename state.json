@@ -161,6 +161,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/SQuadGen"
     },
+    "hf:microsoft/rho-libero": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "rho libero",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-22T17:31:20.649522+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/rho-libero"
+    },
+    "hf:microsoft/rho-roboeval": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "rho roboeval",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-22T17:31:17.143314+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/rho-roboeval"
+    },
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -290,6 +316,19 @@
       "shipped_at": "2026-09-01T21:31:36.799047+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/"
+    },
+    "rss:amazon:claude-opus-5-5-is-now-available-on-aws": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Opus 5.5 is now available on AWS",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-22T17:31:13.639755+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/"
     },
     "rss:amazon:cross-region-inference-for-openai-gpt-5-6-models-on-amazon-be": {
       "aa_model_id": null,
@@ -878,8 +917,8 @@
     }
   },
   "posts_today": {
-    "count": 1,
-    "date": "2026-09-21"
+    "count": 3,
+    "date": "2026-09-22"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1499,6 +1538,9 @@
     "rss:amazon:amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
     "rss:kimi:kimi-k3-on-amazon-bedrock",
     "rss:openai:the-australian-youth-safety-blueprint",
-    "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock"
+    "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock",
+    "rss:amazon:claude-opus-5-5-is-now-available-on-aws",
+    "hf:microsoft/rho-roboeval",
+    "hf:microsoft/rho-libero"
   ]
 }
