@@ -395,6 +395,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/take-on-your-most-ambitious-work-with-gpt-6-astra-on-amazon-bedrock/"
     },
+    "rss:amazon:gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "GPT-6 Sol and GPT-6 Luna on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-23T01:36:52.728454+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/"
+    },
     "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -772,6 +785,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/codex-quantum-computing-experiments"
     },
+    "rss:openai:gpt-6": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-23T01:36:46.127582+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/better-prompt-caching-for-gpt-6"
+    },
     "rss:openai:gpt-6-astra": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -797,6 +823,19 @@
       "shipped_at": "2026-09-12T01:20:49.235078+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
+    },
+    "rss:openai:gpt-6-sol-and-luna": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 Sol and Luna",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-23T01:36:49.354017+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna"
     },
     "rss:openai:intelligence-age": {
       "aa_model_id": null,
@@ -918,7 +957,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-09-22"
+    "date": "2026-09-23"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1541,6 +1580,9 @@
     "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock",
     "rss:amazon:claude-opus-5-5-is-now-available-on-aws",
     "hf:microsoft/rho-roboeval",
-    "hf:microsoft/rho-libero"
+    "hf:microsoft/rho-libero",
+    "rss:openai:gpt-6",
+    "rss:openai:gpt-6-sol-and-luna",
+    "rss:amazon:gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock"
   ]
 }
