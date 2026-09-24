@@ -551,6 +551,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/"
     },
+    "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude discovers a novel enzyme system with CR",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-24T01:33:37.859473+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+    },
     "rss:anthropic:previewing-the-model-hardware-standard": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -811,6 +824,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/legora-financial-statement-review-with-astra"
     },
+    "rss:openai:gpt-6-astra-and-openai-frontier-models": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 Astra and OpenAI frontier models",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-24T01:33:34.661855+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/airbnb-gpt-6-astra"
+    },
     "rss:openai:gpt-6-astra-with-end-to-end-systems": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -849,6 +875,19 @@
       "shipped_at": "2026-08-26T23:53:32.156273+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-ai-futures"
+    },
+    "rss:openai:mentalhealthbench": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "MentalHealthBench",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-24T01:33:31.786359+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-mentalhealthbench"
     },
     "rss:openai:offering-zero-data-retention-for-frontier-models": {
       "aa_model_id": null,
@@ -957,7 +996,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-09-23"
+    "date": "2026-09-24"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1583,6 +1622,9 @@
     "hf:microsoft/rho-libero",
     "rss:openai:gpt-6",
     "rss:openai:gpt-6-sol-and-luna",
-    "rss:amazon:gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock"
+    "rss:amazon:gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock",
+    "rss:openai:mentalhealthbench",
+    "rss:openai:gpt-6-astra-and-openai-frontier-models",
+    "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr"
   ]
 }
