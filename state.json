@@ -3,6 +3,13 @@
     "data": [],
     "fetched_at": null
   },
+  "distribution": {
+    "founder_quotes": 0,
+    "launch_pinned": true,
+    "launch_quoted_id": null,
+    "pinned_tweet_id": "2087795205739274481",
+    "profile_set": true
+  },
   "last_tweet_ids": [],
   "posted_models": {
     "hf:MiniMaxAI/MiniMax-Music3": {
