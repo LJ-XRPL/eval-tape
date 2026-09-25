@@ -486,6 +486,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod/"
     },
+    "rss:amazon:nova": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Nova",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-25T02:37:14.186929+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/aderant-builds-intelligent-ticket-triage-with-amazon-nova/"
+    },
     "rss:amazon:nova-forge": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -641,6 +654,32 @@
       "shipped_at": "2026-09-15T19:46:27.706703+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
+    },
+    "rss:google:gemini-3-8-live-with-live-avatar": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 3.8 Live with Live Avatar",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-25T02:37:06.682265+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/"
+    },
+    "rss:google:gemini-3-8-text-to-speech-says-hello": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 3.8 text-to-speech says hello",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-25T02:37:10.401291+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
     },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
@@ -996,7 +1035,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-09-24"
+    "date": "2026-09-25"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1625,6 +1664,9 @@
     "rss:amazon:gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock",
     "rss:openai:mentalhealthbench",
     "rss:openai:gpt-6-astra-and-openai-frontier-models",
-    "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr"
+    "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr",
+    "rss:google:gemini-3-8-live-with-live-avatar",
+    "rss:google:gemini-3-8-text-to-speech-says-hello",
+    "rss:amazon:nova"
   ]
 }
