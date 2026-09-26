@@ -187,6 +187,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/rho-roboeval"
     },
+    "hf:microsoft/rho-ur-ai-trainer": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "rho ur ai trainer",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-26T00:17:25.675284+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/rho-ur-ai-trainer"
+    },
+    "hf:microsoft/rho-yam-box": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "rho yam box",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-26T00:17:22.210140+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/rho-yam-box"
+    },
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -563,6 +589,19 @@
       "shipped_at": "2026-09-14T19:54:17.270331+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/"
+    },
+    "rss:amazon:use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Use open weight models as your AI coding agent with Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-26T00:17:18.729888+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/"
     },
     "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr": {
       "aa_model_id": null,
@@ -1035,7 +1074,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-09-25"
+    "date": "2026-09-26"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1667,6 +1706,9 @@
     "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr",
     "rss:google:gemini-3-8-live-with-live-avatar",
     "rss:google:gemini-3-8-text-to-speech-says-hello",
-    "rss:amazon:nova"
+    "rss:amazon:nova",
+    "rss:amazon:use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock",
+    "hf:microsoft/rho-yam-box",
+    "hf:microsoft/rho-ur-ai-trainer"
   ]
 }
