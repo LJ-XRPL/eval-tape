@@ -161,6 +161,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/SQuadGen"
     },
+    "hf:microsoft/rho-base": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "rho base",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-27T01:38:17.956737+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/rho-base"
+    },
+    "hf:microsoft/rho-fr3-duo": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "rho fr3 duo",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-27T01:38:14.471170+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/rho-fr3-duo"
+    },
     "hf:microsoft/rho-libero": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1073,8 +1099,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-26"
+    "count": 2,
+    "date": "2026-09-27"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1709,6 +1735,8 @@
     "rss:amazon:nova",
     "rss:amazon:use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock",
     "hf:microsoft/rho-yam-box",
-    "hf:microsoft/rho-ur-ai-trainer"
+    "hf:microsoft/rho-ur-ai-trainer",
+    "hf:microsoft/rho-fr3-duo",
+    "hf:microsoft/rho-base"
   ]
 }
