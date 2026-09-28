@@ -382,6 +382,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/"
     },
+    "rss:amazon:claude-sonnet-5-5-on-aws": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Sonnet 5.5 on AWS",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-28T22:48:14.615564+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-sonnet-5-5-on-aws/"
+    },
     "rss:amazon:cross-region-inference-for-openai-gpt-5-6-models-on-amazon-be": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -472,6 +485,19 @@
       "shipped_at": "2026-09-21T23:45:19.337725+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/xais-grok-4-6-is-now-available-in-amazon-bedrock/"
+    },
+    "rss:amazon:grok-4-7-is-now-available-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Grok 4.7 is now available on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-28T22:48:11.256396+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/"
     },
     "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills": {
       "aa_model_id": null,
@@ -1100,7 +1126,7 @@
   },
   "posts_today": {
     "count": 2,
-    "date": "2026-09-27"
+    "date": "2026-09-28"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1737,6 +1763,8 @@
     "hf:microsoft/rho-yam-box",
     "hf:microsoft/rho-ur-ai-trainer",
     "hf:microsoft/rho-fr3-duo",
-    "hf:microsoft/rho-base"
+    "hf:microsoft/rho-base",
+    "rss:amazon:grok-4-7-is-now-available-on-amazon-bedrock",
+    "rss:amazon:claude-sonnet-5-5-on-aws"
   ]
 }
