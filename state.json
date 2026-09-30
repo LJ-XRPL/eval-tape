@@ -57,6 +57,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/google/gnm-v3"
     },
+    "hf:google/tabfm-1.1.0-pytorch": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "tabfm 1.1.0 pytorch",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-30T09:54:07.299541+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/tabfm-1.1.0-pytorch"
+    },
     "hf:google/timesfm-3.0-pytorch": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1190,7 +1203,7 @@
     }
   },
   "posts_today": {
-    "count": 2,
+    "count": 3,
     "date": "2026-09-30"
   },
   "seeded": true,
@@ -1835,6 +1848,7 @@
     "rss:openai:dots",
     "rss:amazon:gpt-6-1-sol-on-amazon-bedrock",
     "rss:amazon:claude-model-availability-to-in-country-infere",
-    "rss:amazon:anthropic-models-on-amazon-bedrock-for-in-region-inference-in"
+    "rss:amazon:anthropic-models-on-amazon-bedrock-for-in-region-inference-in",
+    "hf:google/tabfm-1.1.0-pytorch"
   ]
 }
