@@ -304,6 +304,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/"
     },
+    "rss:amazon:anthropic-models-on-amazon-bedrock-for-in-region-inference-in": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Anthropic models on Amazon Bedrock for in-region inference in",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-30T03:06:11.822437+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/"
+    },
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -368,6 +381,19 @@
       "shipped_at": "2026-09-01T21:31:36.799047+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/"
+    },
+    "rss:amazon:claude-model-availability-to-in-country-infere": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude model availability to in-country infere",
+      "open_closed": "closed",
+      "shipped_at": "2026-09-30T03:06:08.817854+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/"
     },
     "rss:amazon:claude-opus-5-5-is-now-available-on-aws": {
       "aa_model_id": null,
@@ -1164,8 +1190,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-09-29"
+    "count": 2,
+    "date": "2026-09-30"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1807,6 +1833,8 @@
     "rss:amazon:claude-sonnet-5-5-on-aws",
     "rss:openai:gpt-6-1-sol",
     "rss:openai:dots",
-    "rss:amazon:gpt-6-1-sol-on-amazon-bedrock"
+    "rss:amazon:gpt-6-1-sol-on-amazon-bedrock",
+    "rss:amazon:claude-model-availability-to-in-country-infere",
+    "rss:amazon:anthropic-models-on-amazon-bedrock-for-in-region-inference-in"
   ]
 }
