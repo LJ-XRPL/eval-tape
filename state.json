@@ -824,6 +824,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/"
     },
+    "rss:google:gemini-4-argon": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 4 Argon",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-01T00:17:12.017574+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+    },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -849,6 +862,19 @@
       "shipped_at": "2026-08-27T17:08:50.546769+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/"
+    },
+    "rss:google:synthid-bio": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "SynthID Bio",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-01T00:17:14.589945+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/introducing-synthid-bio/"
     },
     "rss:google:weathernext-3": {
       "aa_model_id": null,
@@ -940,6 +966,19 @@
       "shipped_at": "2026-09-09T01:20:47.742914+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-chatgpt-images-2-5"
+    },
+    "rss:openai:disrupting-a-coordinated-model-distillation-campaign": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Disrupting a coordinated model-distillation campaign",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-01T00:17:09.405342+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign"
     },
     "rss:openai:dots": {
       "aa_model_id": null,
@@ -1204,7 +1243,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-09-30"
+    "date": "2026-10-01"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1849,6 +1888,9 @@
     "rss:amazon:gpt-6-1-sol-on-amazon-bedrock",
     "rss:amazon:claude-model-availability-to-in-country-infere",
     "rss:amazon:anthropic-models-on-amazon-bedrock-for-in-region-inference-in",
-    "hf:google/tabfm-1.1.0-pytorch"
+    "hf:google/tabfm-1.1.0-pytorch",
+    "rss:openai:disrupting-a-coordinated-model-distillation-campaign",
+    "rss:google:gemini-4-argon",
+    "rss:google:synthid-bio"
   ]
 }
