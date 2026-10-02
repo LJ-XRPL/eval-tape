@@ -421,6 +421,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws/"
     },
+    "rss:amazon:claude-platform-on-aws": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Platform on AWS",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-02T02:23:56.632193+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/implementing-multi-environment-access-for-claude-platform-on-aws/"
+    },
     "rss:amazon:claude-sonnet-5-5-on-aws": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -642,6 +655,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/"
     },
+    "rss:amazon:nova-to-their-retail-moderation-policies-for": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Nova to their retail moderation policies for",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-02T02:24:00.469919+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/how-uniopen-customized-amazon-nova-to-their-retail-moderation-policies-for-production-deployment/"
+    },
     "rss:amazon:nvidia-nemotron-3-5-lightning-now-available-in-amazon-sagemaker-jumpstart": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -719,6 +745,19 @@
       "shipped_at": "2026-09-24T01:33:37.859473+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+    },
+    "rss:anthropic:claude-to-upgrade-operations-and-improve-clien": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude to upgrade operations and improve clien",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-02T02:23:52.790483+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/barclays-scales-claude"
     },
     "rss:anthropic:previewing-the-model-hardware-standard": {
       "aa_model_id": null,
@@ -1243,7 +1282,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1891,6 +1930,9 @@
     "hf:google/tabfm-1.1.0-pytorch",
     "rss:openai:disrupting-a-coordinated-model-distillation-campaign",
     "rss:google:gemini-4-argon",
-    "rss:google:synthid-bio"
+    "rss:google:synthid-bio",
+    "rss:anthropic:claude-to-upgrade-operations-and-improve-clien",
+    "rss:amazon:claude-platform-on-aws",
+    "rss:amazon:nova-to-their-retail-moderation-policies-for"
   ]
 }
