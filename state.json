@@ -161,6 +161,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/google/tipsv1-so400m14"
     },
+    "hf:microsoft/FrogNano-4B-2609": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "FrogNano 4B 2609",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-03T03:00:18.711345+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/FrogNano-4B-2609"
+    },
     "hf:microsoft/SQuadGen": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -381,6 +394,19 @@
       "shipped_at": "2026-09-15T19:46:31.506364+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/"
+    },
+    "rss:amazon:claude-desktop-with-amazon-bedrock-agentcore": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Desktop with Amazon Bedrock AgentCore",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-03T03:00:14.759562+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/"
     },
     "rss:amazon:claude-fable-5-1-on-aws": {
       "aa_model_id": null,
@@ -1136,6 +1162,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/perplexity-improving-accuracy-with-astra"
     },
+    "rss:openai:gpt-6-family": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 family",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-03T03:00:10.911924+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/practical-guide-building-gpt-6"
+    },
     "rss:openai:gpt-6-sol-and-luna": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1282,7 +1321,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-02"
+    "date": "2026-10-03"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1933,6 +1972,9 @@
     "rss:google:synthid-bio",
     "rss:anthropic:claude-to-upgrade-operations-and-improve-clien",
     "rss:amazon:claude-platform-on-aws",
-    "rss:amazon:nova-to-their-retail-moderation-policies-for"
+    "rss:amazon:nova-to-their-retail-moderation-policies-for",
+    "rss:openai:gpt-6-family",
+    "rss:amazon:claude-desktop-with-amazon-bedrock-agentcore",
+    "hf:microsoft/FrogNano-4B-2609"
   ]
 }
