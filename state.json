@@ -395,6 +395,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-product-tagging-system-with-amazon-sagemaker-serverless-model-customization/"
     },
+    "rss:amazon:claude-code-and-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Code and Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-05T18:40:01.203667+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/supercharge-regulated-workloads-with-claude-code-and-amazon-bedrock/"
+    },
     "rss:amazon:claude-desktop-with-amazon-bedrock-agentcore": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1320,8 +1333,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-03"
+    "count": 1,
+    "date": "2026-10-05"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1975,6 +1988,7 @@
     "rss:amazon:nova-to-their-retail-moderation-policies-for",
     "rss:openai:gpt-6-family",
     "rss:amazon:claude-desktop-with-amazon-bedrock-agentcore",
-    "hf:microsoft/FrogNano-4B-2609"
+    "hf:microsoft/FrogNano-4B-2609",
+    "rss:amazon:claude-code-and-amazon-bedrock"
   ]
 }
