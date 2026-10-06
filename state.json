@@ -824,6 +824,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/life-sciences-verification-program"
     },
+    "rss:glm:glm-5-3-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "glm",
+      "name": "GLM 5.3 on Amazon Bedrock",
+      "open_closed": "open",
+      "shipped_at": "2026-10-06T00:31:13.368840+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/"
+    },
     "rss:google:gemini-3-5-transcribe": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1334,7 +1347,7 @@
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-10-05"
+    "date": "2026-10-06"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -1989,6 +2002,7 @@
     "rss:openai:gpt-6-family",
     "rss:amazon:claude-desktop-with-amazon-bedrock-agentcore",
     "hf:microsoft/FrogNano-4B-2609",
-    "rss:amazon:claude-code-and-amazon-bedrock"
+    "rss:amazon:claude-code-and-amazon-bedrock",
+    "rss:glm:glm-5-3-on-amazon-bedrock"
   ]
 }
