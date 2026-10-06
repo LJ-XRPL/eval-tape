@@ -44,6 +44,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
     },
+    "hf:google/embeddinggemma-2": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "gemma",
+      "name": "embeddinggemma 2",
+      "open_closed": "open",
+      "shipped_at": "2026-10-06T19:15:44.077205+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/google/embeddinggemma-2"
+    },
     "hf:google/gnm-v3": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -693,6 +706,19 @@
       "shipped_at": "2026-08-14T16:13:44.153861+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/"
+    },
+    "rss:amazon:nova-sonic": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Nova Sonic",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-06T19:15:40.605434+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/build-a-voice-travel-concierge-with-amazon-bedrock-agentcore-managed-knowledge-base-and-nova-sonic/"
     },
     "rss:amazon:nova-to-their-retail-moderation-policies-for": {
       "aa_model_id": null,
@@ -1346,7 +1372,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-10-06"
   },
   "seeded": true,
@@ -2003,6 +2029,8 @@
     "rss:amazon:claude-desktop-with-amazon-bedrock-agentcore",
     "hf:microsoft/FrogNano-4B-2609",
     "rss:amazon:claude-code-and-amazon-bedrock",
-    "rss:glm:glm-5-3-on-amazon-bedrock"
+    "rss:glm:glm-5-3-on-amazon-bedrock",
+    "rss:amazon:nova-sonic",
+    "hf:google/embeddinggemma-2"
   ]
 }
