@@ -850,6 +850,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/life-sciences-verification-program"
     },
+    "rss:gemma:embeddinggemma-2-an-open-lightweight-multimodal-embedding-model": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "gemma",
+      "name": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "open_closed": "open",
+      "shipped_at": "2026-10-07T02:34:01.640006+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/"
+    },
     "rss:glm:glm-5-3-on-amazon-bedrock": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1372,8 +1385,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-06"
+    "count": 1,
+    "date": "2026-10-07"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2031,6 +2044,7 @@
     "rss:amazon:claude-code-and-amazon-bedrock",
     "rss:glm:glm-5-3-on-amazon-bedrock",
     "rss:amazon:nova-sonic",
-    "hf:google/embeddinggemma-2"
+    "hf:google/embeddinggemma-2",
+    "rss:gemma:embeddinggemma-2-an-open-lightweight-multimodal-embedding-model"
   ]
 }
