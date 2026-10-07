@@ -447,6 +447,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/"
     },
+    "rss:amazon:claude-haiku-5-5-on-aws": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Haiku 5.5 on AWS",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-07T22:08:51.553020+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/"
+    },
     "rss:amazon:claude-model-availability-to-in-country-infere": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1385,7 +1398,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-10-07"
   },
   "seeded": true,
@@ -2045,6 +2058,7 @@
     "rss:glm:glm-5-3-on-amazon-bedrock",
     "rss:amazon:nova-sonic",
     "hf:google/embeddinggemma-2",
-    "rss:gemma:embeddinggemma-2-an-open-lightweight-multimodal-embedding-model"
+    "rss:gemma:embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+    "rss:amazon:claude-haiku-5-5-on-aws"
   ]
 }
