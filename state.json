@@ -850,6 +850,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
     },
+    "rss:anthropic:the-anthropic-cyber-mission": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "the Anthropic Cyber Mission",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-08T21:40:52.483412+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/anthropic-cyber-mission"
+    },
     "rss:anthropic:the-life-sciences-verification-program": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1398,8 +1411,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-10-07"
+    "count": 1,
+    "date": "2026-10-08"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2059,6 +2072,7 @@
     "rss:amazon:nova-sonic",
     "hf:google/embeddinggemma-2",
     "rss:gemma:embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
-    "rss:amazon:claude-haiku-5-5-on-aws"
+    "rss:amazon:claude-haiku-5-5-on-aws",
+    "rss:anthropic:the-anthropic-cyber-mission"
   ]
 }
