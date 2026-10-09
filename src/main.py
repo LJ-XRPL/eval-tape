@@ -13,16 +13,16 @@ from dotenv import load_dotenv
 from src.captions import (
     ComparableFact,
     format_alt_evals,
-    format_alt_ranked,
     format_alt_shipped,
     format_evals_caption,
     format_ranked_evals_list,
     format_shipped_caption,
 )
 from src.cards import render_evals_card, render_ranked_evals_card, render_shipped_card
-from src.config import LAB_BY_KEY, OUT_DIR
+from src.config import LAB_BY_KEY, OUT_DIR, BATCH_EVALS_PHOTOS
 from src.detect import detect_candidates, seed_seen_from_current
-from src.evals import fetch_aa_models, find_new_evals
+from src.distribute import amplify_post, bootstrap_distribution
+from src.evals import fetch_aa_models, find_new_evals, models_awaiting_evals
 from src.post import dry_run_enabled, post_with_media
 from src.state import load_state, mark_evals_posted, record_post, remaining_posts_today, save_state, upsert_shipped
 
@@ -132,6 +132,9 @@ def run_once(*, force_seed: bool = False) -> int:
         log.info("Seeded %s existing candidates; posting nothing this run", added)
         return 0
 
+    bootstrap_distribution(state, dry_run=dry)
+    save_state(state)
+
     budget = remaining_posts_today(state)
     if budget <= 0:
         log.info("Daily post cap reached; exiting")
@@ -180,6 +183,14 @@ def run_once(*, force_seed: bool = False) -> int:
             tweet_id=result.tweet_id,
         )
         record_post(state, result.tweet_id)
+        if result.tweet_id and not result.dry_run:
+            amplify_post(
+                state,
+                tweet_id=result.tweet_id,
+                kind="shipped",
+                model_name=cand.name,
+                dry_run=dry,
+            )
         posts_made += 1
         log.info("SHIPPED processed: %s", cand.name)
 
@@ -189,6 +200,11 @@ def run_once(*, force_seed: bool = False) -> int:
         return 0
 
     # 2) For shipped models missing evals, check AA → EVALS
+    if not models_awaiting_evals(state):
+        log.info("No shipped models waiting on evals; skip Artificial Analysis")
+        save_state(state)
+        return 0
+
     aa_key = os.getenv("AA_API_KEY", "")
     try:
         aa_models = fetch_aa_models(aa_key, state)
@@ -204,20 +220,31 @@ def run_once(*, force_seed: bool = False) -> int:
         save_state(state)
         return 0
 
-    # Cap 3/day. If several evals land together, one ranked list, not six tweets.
+    # Cap 3/day. Several evals together → one tweet with up to 3 jumbotron photos.
     if len(ready) > 1 and budget_left >= 1:
-        batch = ready[: min(5, len(ready))]
+        batch = sorted(ready, key=lambda r: r["aa"].rank)[:BATCH_EVALS_PHOTOS]
         rows = [(r["name"], r["aa"].score, r["aa"].rank) for r in batch]
-        # Use open_closed of majority / first for caption tone; list post is neutral
         open_closed = batch[0]["open_closed"]
         caption = format_ranked_evals_list(rows, open_closed)
-        card_path = OUT_DIR / "evals_batch.png"
-        render_ranked_evals_card(rows=rows, lab_key=batch[0]["lab"], out_path=card_path)
+        card_paths: list[Path] = []
+        alts: list[str] = []
+        for r in batch:
+            slug = r["name"].lower().replace(" ", "_")[:60]
+            card_path = OUT_DIR / f"evals_{slug}.png"
+            render_evals_card(
+                model_name=r["name"],
+                lab_key=r["lab"],
+                score=r["aa"].score,
+                rank=r["aa"].rank,
+                out_path=card_path,
+            )
+            card_paths.append(card_path)
+            alts.append(format_alt_evals(r["name"], r["aa"].score, r["aa"].rank, r["open_closed"]))
         result = post_with_media(
             caption=caption,
-            media_path=card_path,
+            media_paths=card_paths,
+            alt_texts=alts,
             source_url="https://artificialanalysis.ai/",
-            alt_text=format_alt_ranked(rows),
             dry_run=dry,
         )
         for r in batch:
@@ -230,6 +257,14 @@ def run_once(*, force_seed: bool = False) -> int:
                 tweet_id=result.tweet_id,
             )
         record_post(state, result.tweet_id)
+        if result.tweet_id and not result.dry_run:
+            amplify_post(
+                state,
+                tweet_id=result.tweet_id,
+                kind="evals",
+                model_name=batch[0]["name"],
+                dry_run=dry,
+            )
         posts_made += 1
         log.info("EVALS batch posted (%s models)", len(batch))
     else:
@@ -266,6 +301,14 @@ def run_once(*, force_seed: bool = False) -> int:
             tweet_id=result.tweet_id,
         )
         record_post(state, result.tweet_id)
+        if result.tweet_id and not result.dry_run:
+            amplify_post(
+                state,
+                tweet_id=result.tweet_id,
+                kind="evals",
+                model_name=r["name"],
+                dry_run=dry,
+            )
         posts_made += 1
         log.info("EVALS posted: %s", r["name"])
 
@@ -291,7 +334,20 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Run one detection/evals cycle",
     )
+    parser.add_argument(
+        "--bootstrap",
+        action="store_true",
+        help="Set @evaltape website, pin the launch tweet, founder-quote if tokens exist",
+    )
     args = parser.parse_args(argv)
+
+    if args.bootstrap and not args.run and not args.seed and not args.samples:
+        load_dotenv()
+        state = load_state()
+        dist = bootstrap_distribution(state, dry_run=dry_run_enabled())
+        save_state(state)
+        log.info("Bootstrap done: %s", dist)
+        return 0
 
     if args.samples or (not args.run and not args.seed):
         # Default CI entry: samples are always safe / no secrets required
