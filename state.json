@@ -278,6 +278,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/rho-yam-box"
     },
+    "hf:mistralai/LIDstral-Arabic": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "mistral",
+      "name": "LIDstral Arabic",
+      "open_closed": "open",
+      "shipped_at": "2026-10-09T20:12:19.695564+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/mistralai/LIDstral-Arabic"
+    },
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1188,6 +1201,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/codex-quantum-computing-experiments"
     },
+    "rss:openai:gpt-5-model-series": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-5 Model Series",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-09T20:12:12.153329+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-with-ai"
+    },
     "rss:openai:gpt-6": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1344,6 +1370,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     },
+    "rss:openai:solving-complex-problems-with-openai-o1-models": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Solving complex problems with OpenAI o1 models",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-09T20:12:15.872927+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/business/solving-complex-problems-with-openai-o1-models"
+    },
     "rss:openai:stampli-cuts-launch-hours-by-68-using-chatgpt-work": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1411,8 +1450,8 @@
     }
   },
   "posts_today": {
-    "count": 1,
-    "date": "2026-10-08"
+    "count": 3,
+    "date": "2026-10-09"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2073,6 +2112,9 @@
     "hf:google/embeddinggemma-2",
     "rss:gemma:embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
     "rss:amazon:claude-haiku-5-5-on-aws",
-    "rss:anthropic:the-anthropic-cyber-mission"
+    "rss:anthropic:the-anthropic-cyber-mission",
+    "rss:openai:gpt-5-model-series",
+    "rss:openai:solving-complex-problems-with-openai-o1-models",
+    "hf:mistralai/LIDstral-Arabic"
   ]
 }
