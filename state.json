@@ -616,6 +616,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/"
     },
+    "rss:amazon:gpt-models-on-amazon-bedrock-with-global-cr": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "GPT models on Amazon Bedrock with global cr",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-12T22:41:08.880945+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan/"
+    },
     "rss:amazon:grok-4-6-is-now-available-in-amazon-bedrock": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1071,6 +1084,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/"
     },
+    "rss:meta:llama-cpp-on-amazon-sagemaker-ai": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "meta",
+      "name": "llama.cpp on Amazon SageMaker AI",
+      "open_closed": "open",
+      "shipped_at": "2026-10-12T22:41:12.804145+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/"
+    },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1450,8 +1476,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-09"
+    "count": 2,
+    "date": "2026-10-12"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2115,6 +2141,8 @@
     "rss:anthropic:the-anthropic-cyber-mission",
     "rss:openai:gpt-5-model-series",
     "rss:openai:solving-complex-problems-with-openai-o1-models",
-    "hf:mistralai/LIDstral-Arabic"
+    "hf:mistralai/LIDstral-Arabic",
+    "rss:amazon:gpt-models-on-amazon-bedrock-with-global-cr",
+    "rss:meta:llama-cpp-on-amazon-sagemaker-ai"
   ]
 }
