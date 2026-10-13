@@ -655,6 +655,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/"
     },
+    "rss:amazon:grok-4-7-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Grok 4.7 on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-13T17:53:07.181043+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/"
+    },
+    "rss:amazon:how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "How ShipStation Global built an AI IT help desk on Amazon Bedrock AgentCore",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-13T17:53:04.199981+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/"
+    },
     "rss:amazon:improving-hcls-ai-reasoning-with-open-source-agent-skills": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1018,6 +1044,19 @@
       "shipped_at": "2026-10-01T00:17:12.017574+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+    },
+    "rss:google:gemini-4-argon-for-robotics": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 4 Argon for Robotics",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-13T17:53:01.172868+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
     },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
@@ -1476,8 +1515,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-10-12"
+    "count": 3,
+    "date": "2026-10-13"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2143,6 +2182,9 @@
     "rss:openai:solving-complex-problems-with-openai-o1-models",
     "hf:mistralai/LIDstral-Arabic",
     "rss:amazon:gpt-models-on-amazon-bedrock-with-global-cr",
-    "rss:meta:llama-cpp-on-amazon-sagemaker-ai"
+    "rss:meta:llama-cpp-on-amazon-sagemaker-ai",
+    "rss:google:gemini-4-argon-for-robotics",
+    "rss:amazon:how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore",
+    "rss:amazon:grok-4-7-on-amazon-bedrock"
   ]
 }
