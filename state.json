@@ -1058,6 +1058,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/"
     },
+    "rss:google:gemini-4-argon-responsibly-and-safely": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 4 Argon responsibly and safely",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-14T01:19:11.252261+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
+    },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1515,8 +1528,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-13"
+    "count": 1,
+    "date": "2026-10-14"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2185,6 +2198,7 @@
     "rss:meta:llama-cpp-on-amazon-sagemaker-ai",
     "rss:google:gemini-4-argon-for-robotics",
     "rss:amazon:how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore",
-    "rss:amazon:grok-4-7-on-amazon-bedrock"
+    "rss:amazon:grok-4-7-on-amazon-bedrock",
+    "rss:google:gemini-4-argon-responsibly-and-safely"
   ]
 }
