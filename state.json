@@ -538,6 +538,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
     },
+    "rss:amazon:deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Deploy and evaluate models with Amazon SageMaker JumpStart",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-14T17:25:37.925503+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart/"
+    },
     "rss:amazon:deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1162,6 +1175,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-ai-futures"
     },
+    "rss:openai:amp-puts-ai-agents-to-work-beyond-code-with-openai-models": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Amp puts AI agents to work beyond code with OpenAI models",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-14T17:25:34.537781+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/amp-beyond-coding"
+    },
     "rss:openai:astra-for-law": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1528,7 +1554,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-10-14"
   },
   "seeded": true,
@@ -2199,6 +2225,8 @@
     "rss:google:gemini-4-argon-for-robotics",
     "rss:amazon:how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore",
     "rss:amazon:grok-4-7-on-amazon-bedrock",
-    "rss:google:gemini-4-argon-responsibly-and-safely"
+    "rss:google:gemini-4-argon-responsibly-and-safely",
+    "rss:openai:amp-puts-ai-agents-to-work-beyond-code-with-openai-models",
+    "rss:amazon:deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart"
   ]
 }
