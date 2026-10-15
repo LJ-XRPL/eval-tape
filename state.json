@@ -291,6 +291,45 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/mistralai/LIDstral-Arabic"
     },
+    "hf:mistralai/Timestral-123M": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "mistral",
+      "name": "Timestral 123M",
+      "open_closed": "open",
+      "shipped_at": "2026-10-15T17:37:01.558133+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/mistralai/Timestral-123M"
+    },
+    "hf:mistralai/Timestral-28M": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "mistral",
+      "name": "Timestral 28M",
+      "open_closed": "open",
+      "shipped_at": "2026-10-15T17:37:04.883353+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/mistralai/Timestral-28M"
+    },
+    "hf:mistralai/Timestral-5M": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "mistral",
+      "name": "Timestral 5M",
+      "open_closed": "open",
+      "shipped_at": "2026-10-15T17:37:08.226180+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/mistralai/Timestral-5M"
+    },
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1555,7 +1594,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-14"
+    "date": "2026-10-15"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2227,6 +2266,9 @@
     "rss:amazon:grok-4-7-on-amazon-bedrock",
     "rss:google:gemini-4-argon-responsibly-and-safely",
     "rss:openai:amp-puts-ai-agents-to-work-beyond-code-with-openai-models",
-    "rss:amazon:deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart"
+    "rss:amazon:deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart",
+    "hf:mistralai/Timestral-123M",
+    "hf:mistralai/Timestral-28M",
+    "hf:mistralai/Timestral-5M"
   ]
 }
