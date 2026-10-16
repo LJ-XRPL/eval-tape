@@ -278,6 +278,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/rho-yam-box"
     },
+    "hf:microsoft/scFM-dataselection": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "scFM dataselection",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-16T01:34:28.323109+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/scFM-dataselection"
+    },
     "hf:mistralai/LIDstral-Arabic": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1201,6 +1214,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/"
     },
+    "rss:meta:meta-s-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "meta",
+      "name": "Meta\u2019s Muse Spark Open now available in Amazon SageMaker JumpStart",
+      "open_closed": "open",
+      "shipped_at": "2026-10-16T01:34:25.263221+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/"
+    },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1448,6 +1474,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna"
     },
+    "rss:openai:gpt-rosalind-to-academic-research-labs": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-Rosalind to academic research labs",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-16T01:34:22.211398+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
+    },
     "rss:openai:intelligence-age": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1594,7 +1633,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-15"
+    "date": "2026-10-16"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2269,6 +2308,9 @@
     "rss:amazon:deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart",
     "hf:mistralai/Timestral-123M",
     "hf:mistralai/Timestral-28M",
-    "hf:mistralai/Timestral-5M"
+    "hf:mistralai/Timestral-5M",
+    "rss:openai:gpt-rosalind-to-academic-research-labs",
+    "rss:meta:meta-s-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart",
+    "hf:microsoft/scFM-dataselection"
   ]
 }
