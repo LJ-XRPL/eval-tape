@@ -317,6 +317,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/mistralai/Timestral-123M"
     },
+    "hf:mistralai/Timestral-209M": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "mistral",
+      "name": "Timestral 209M",
+      "open_closed": "open",
+      "shipped_at": "2026-10-17T00:39:39.042388+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/mistralai/Timestral-209M"
+    },
     "hf:mistralai/Timestral-28M": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -901,6 +914,19 @@
       "shipped_at": "2026-09-11T01:17:09.844763+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching/"
+    },
+    "rss:amazon:reflection-beam": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Reflection Beam",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-17T00:39:36.647247+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/"
     },
     "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode": {
       "aa_model_id": null,
@@ -1632,8 +1658,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-16"
+    "count": 2,
+    "date": "2026-10-17"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2311,6 +2337,8 @@
     "hf:mistralai/Timestral-5M",
     "rss:openai:gpt-rosalind-to-academic-research-labs",
     "rss:meta:meta-s-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart",
-    "hf:microsoft/scFM-dataselection"
+    "hf:microsoft/scFM-dataselection",
+    "rss:amazon:reflection-beam",
+    "hf:mistralai/Timestral-209M"
   ]
 }
