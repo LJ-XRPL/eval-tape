@@ -902,6 +902,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-openai-models-on-amazon-bedrock-for-in-country-inferencing-in-india/"
     },
+    "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-19T17:17:08.310048+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/"
+    },
     "rss:amazon:reduce-inference-cold-starts-on-amazon-sagemaker-hyperpod-with-model-caching": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1658,8 +1671,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-10-17"
+    "count": 1,
+    "date": "2026-10-19"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2339,6 +2352,7 @@
     "rss:meta:meta-s-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart",
     "hf:microsoft/scFM-dataselection",
     "rss:amazon:reflection-beam",
-    "hf:mistralai/Timestral-209M"
+    "hf:mistralai/Timestral-209M",
+    "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock"
   ]
 }
