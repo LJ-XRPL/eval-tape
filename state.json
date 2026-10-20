@@ -200,6 +200,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/SQuadGen"
     },
+    "hf:microsoft/bioemu2": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "bioemu2",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-20T10:42:02.229585+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/bioemu2"
+    },
     "hf:microsoft/rho-base": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1684,7 +1697,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-10-20"
   },
   "seeded": true,
@@ -2367,6 +2380,7 @@
     "rss:amazon:reflection-beam",
     "hf:mistralai/Timestral-209M",
     "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
-    "rss:amazon:claude-models-on-amazon-bedrock"
+    "rss:amazon:claude-models-on-amazon-bedrock",
+    "hf:microsoft/bioemu2"
   ]
 }
