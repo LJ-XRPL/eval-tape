@@ -1006,6 +1006,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
     },
+    "rss:anthropic:claude-haiku-5-5": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude Haiku 5.5",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-20T19:30:46.576937+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
     "rss:anthropic:claude-to-upgrade-operations-and-improve-clien": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1697,7 +1710,7 @@
     }
   },
   "posts_today": {
-    "count": 2,
+    "count": 3,
     "date": "2026-10-20"
   },
   "seeded": true,
@@ -2381,6 +2394,7 @@
     "hf:mistralai/Timestral-209M",
     "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
     "rss:amazon:claude-models-on-amazon-bedrock",
-    "hf:microsoft/bioemu2"
+    "hf:microsoft/bioemu2",
+    "rss:anthropic:claude-haiku-5-5"
   ]
 }
