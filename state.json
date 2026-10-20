@@ -551,6 +551,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-expands-claude-model-availability-to-india-cross-region-inference/"
     },
+    "rss:amazon:claude-models-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude models on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-20T00:50:55.985587+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/"
+    },
     "rss:amazon:claude-opus-5-5-is-now-available-on-aws": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1672,7 +1685,7 @@
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-10-19"
+    "date": "2026-10-20"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2353,6 +2366,7 @@
     "hf:microsoft/scFM-dataselection",
     "rss:amazon:reflection-beam",
     "hf:mistralai/Timestral-209M",
-    "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock"
+    "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
+    "rss:amazon:claude-models-on-amazon-bedrock"
   ]
 }
