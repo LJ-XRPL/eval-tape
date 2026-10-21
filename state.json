@@ -1019,6 +1019,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/claude-haiku-5-5"
     },
+    "rss:anthropic:claude-opus-5-5": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude Opus 5.5",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-21T01:10:05.525513+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/claude-opus-5-5"
+    },
+    "rss:anthropic:claude-sonnet-5-5": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude Sonnet 5.5",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-21T01:10:01.979179+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
     "rss:anthropic:claude-to-upgrade-operations-and-improve-clien": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1474,6 +1500,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/better-prompt-caching-for-gpt-6"
     },
+    "rss:openai:gpt-6-1": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6.1",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-21T01:09:58.413555+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/terminal-x"
+    },
     "rss:openai:gpt-6-1-sol": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1711,7 +1750,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-20"
+    "date": "2026-10-21"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2395,6 +2434,9 @@
     "rss:amazon:pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
     "rss:amazon:claude-models-on-amazon-bedrock",
     "hf:microsoft/bioemu2",
-    "rss:anthropic:claude-haiku-5-5"
+    "rss:anthropic:claude-haiku-5-5",
+    "rss:openai:gpt-6-1",
+    "rss:anthropic:claude-sonnet-5-5",
+    "rss:anthropic:claude-opus-5-5"
   ]
 }
