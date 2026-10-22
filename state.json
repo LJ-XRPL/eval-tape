@@ -1019,6 +1019,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/claude-haiku-5-5"
     },
+    "rss:anthropic:claude-mythos-and-fable-5-1": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude Mythos and Fable 5.1",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-22T02:33:51.757781+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+    },
     "rss:anthropic:claude-opus-5-5": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1643,6 +1656,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/our-commitment-to-zero-data-retention"
     },
+    "rss:openai:openai-models-are-coming-to-google-cloud": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "OpenAI models are coming to Google Cloud",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-22T02:33:48.175446+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/openai-models-google-cloud"
+    },
     "rss:openai:our-framework-for-reporting-model-misalignment": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1746,11 +1772,24 @@
       "shipped_at": "2026-09-09T23:26:35.230773+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/deploying-qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperpod-with-vllm/"
+    },
+    "rss:qwen:qwen3-on-aws-trainium-with-torchtitan": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "qwen",
+      "name": "Qwen3 on AWS Trainium with torchtitan",
+      "open_closed": "open",
+      "shipped_at": "2026-10-22T02:33:55.257553+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/"
     }
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-21"
+    "date": "2026-10-22"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2437,6 +2476,9 @@
     "rss:anthropic:claude-haiku-5-5",
     "rss:openai:gpt-6-1",
     "rss:anthropic:claude-sonnet-5-5",
-    "rss:anthropic:claude-opus-5-5"
+    "rss:anthropic:claude-opus-5-5",
+    "rss:openai:openai-models-are-coming-to-google-cloud",
+    "rss:anthropic:claude-mythos-and-fable-5-1",
+    "rss:qwen:qwen3-on-aws-trainium-with-torchtitan"
   ]
 }
