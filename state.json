@@ -447,6 +447,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-anthropic-models-on-amazon-bedrock-for-in-region-inference-in-seoul-and-singapore/"
     },
+    "rss:amazon:beyond-the-kv-cache-training-and-serving-i14-s-laplace-3b-linear-attention-mode": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Beyond the KV cache: Training and serving i14\u2019s Laplace 3B linear attention mode",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-23T00:16:33.166130+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/"
+    },
     "rss:amazon:beyond-the-price-per-token-choosing-the-right-openai-model-on-amazon-bedrock-fo": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -720,6 +733,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/bring-more-intelligence-to-everyday-work-with-gpt-6-sol-and-gpt-6-luna-on-amazon-bedrock/"
     },
+    "rss:amazon:gpt-models-on-amazon-bedrock-from-canada-wi": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "GPT models on Amazon Bedrock from Canada wi",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-23T00:16:36.459995+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/"
+    },
     "rss:amazon:gpt-models-on-amazon-bedrock-with-global-cr": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -849,6 +875,19 @@
       "shipped_at": "2026-08-24T19:53:04.491018+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod/"
+    },
+    "rss:amazon:new-ways-to-customize-models-with-sagemaker-ai": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "new ways to customize models with SageMaker AI",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-23T00:16:29.853167+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/"
     },
     "rss:amazon:nova": {
       "aa_model_id": null,
@@ -1789,7 +1828,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-22"
+    "date": "2026-10-23"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2479,6 +2518,9 @@
     "rss:anthropic:claude-opus-5-5",
     "rss:openai:openai-models-are-coming-to-google-cloud",
     "rss:anthropic:claude-mythos-and-fable-5-1",
-    "rss:qwen:qwen3-on-aws-trainium-with-torchtitan"
+    "rss:qwen:qwen3-on-aws-trainium-with-torchtitan",
+    "rss:amazon:new-ways-to-customize-models-with-sagemaker-ai",
+    "rss:amazon:beyond-the-kv-cache-training-and-serving-i14-s-laplace-3b-linear-attention-mode",
+    "rss:amazon:gpt-models-on-amazon-bedrock-from-canada-wi"
   ]
 }
