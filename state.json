@@ -200,6 +200,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/SQuadGen"
     },
+    "hf:microsoft/Sentiment-Analysis-7B": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "Sentiment Analysis 7B",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-24T00:54:21.283730+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/Sentiment-Analysis-7B"
+    },
     "hf:microsoft/bioemu2": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1734,6 +1747,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     },
+    "rss:openai:securing-our-frontier-model-training-environment": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Securing our frontier model training environment",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-24T00:54:17.788695+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/securing-our-frontier-model-training-environment"
+    },
     "rss:openai:solving-complex-problems-with-openai-o1-models": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1827,8 +1853,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-23"
+    "count": 2,
+    "date": "2026-10-24"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2521,6 +2547,8 @@
     "rss:qwen:qwen3-on-aws-trainium-with-torchtitan",
     "rss:amazon:new-ways-to-customize-models-with-sagemaker-ai",
     "rss:amazon:beyond-the-kv-cache-training-and-serving-i14-s-laplace-3b-linear-attention-mode",
-    "rss:amazon:gpt-models-on-amazon-bedrock-from-canada-wi"
+    "rss:amazon:gpt-models-on-amazon-bedrock-from-canada-wi",
+    "rss:openai:securing-our-frontier-model-training-environment",
+    "hf:microsoft/Sentiment-Analysis-7B"
   ]
 }
