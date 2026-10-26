@@ -174,6 +174,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/google/tipsv1-so400m14"
     },
+    "hf:microsoft/CogACT-v2-RoboDojo": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "CogACT V2 RoboDojo",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-26T17:58:02.200528+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/CogACT-v2-RoboDojo"
+    },
     "hf:microsoft/FrogNano-4B-2609": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -810,6 +823,19 @@
       "shipped_at": "2026-10-13T17:53:07.181043+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/"
+    },
+    "rss:amazon:groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on ",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-26T17:57:59.693944+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/"
     },
     "rss:amazon:how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore": {
       "aa_model_id": null,
@@ -1854,7 +1880,7 @@
   },
   "posts_today": {
     "count": 2,
-    "date": "2026-10-24"
+    "date": "2026-10-26"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2549,6 +2575,8 @@
     "rss:amazon:beyond-the-kv-cache-training-and-serving-i14-s-laplace-3b-linear-attention-mode",
     "rss:amazon:gpt-models-on-amazon-bedrock-from-canada-wi",
     "rss:openai:securing-our-frontier-model-training-environment",
-    "hf:microsoft/Sentiment-Analysis-7B"
+    "hf:microsoft/Sentiment-Analysis-7B",
+    "rss:amazon:groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on",
+    "hf:microsoft/CogACT-v2-RoboDojo"
   ]
 }
