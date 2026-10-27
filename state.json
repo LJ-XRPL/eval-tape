@@ -1045,6 +1045,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/"
     },
+    "rss:amazon:soci-indexed-images-for-faster-sagemaker-ai-jobs": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "SOCI-indexed images for faster SageMaker AI jobs",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-27T18:49:17.542859+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/"
+    },
     "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1643,6 +1656,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
     },
+    "rss:openai:gpt-6-and-gpt-live": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 and GPT-Live",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-27T18:49:13.793065+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/anima"
+    },
     "rss:openai:gpt-6-astra": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1905,7 +1931,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-10-27"
   },
   "seeded": true,
@@ -2605,6 +2631,8 @@
     "rss:amazon:groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on",
     "hf:microsoft/CogACT-v2-RoboDojo",
     "rss:openai:gpt-6-1-sol-helps-coderabbit-strengthen-sec",
-    "rss:openai:gpt-6-1-terra"
+    "rss:openai:gpt-6-1-terra",
+    "rss:openai:gpt-6-and-gpt-live",
+    "rss:amazon:soci-indexed-images-for-faster-sagemaker-ai-jobs"
   ]
 }
