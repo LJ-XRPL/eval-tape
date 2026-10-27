@@ -1630,6 +1630,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security"
     },
+    "rss:openai:gpt-6-1-terra": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6.1 Terra",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-27T01:37:04.612362+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
+    },
     "rss:openai:gpt-6-astra": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1892,8 +1905,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-26"
+    "count": 1,
+    "date": "2026-10-27"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2591,6 +2604,7 @@
     "hf:microsoft/Sentiment-Analysis-7B",
     "rss:amazon:groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on",
     "hf:microsoft/CogACT-v2-RoboDojo",
-    "rss:openai:gpt-6-1-sol-helps-coderabbit-strengthen-sec"
+    "rss:openai:gpt-6-1-sol-helps-coderabbit-strengthen-sec",
+    "rss:openai:gpt-6-1-terra"
   ]
 }
