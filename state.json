@@ -694,6 +694,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/"
     },
+    "rss:amazon:fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Fix evaluation bias to unlock better models on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-28T01:56:46.633965+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock/"
+    },
     "rss:amazon:govern-models-with-mlflow-and-amazon-sagemaker-ai-model-registry-sync-part-1": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1148,6 +1161,19 @@
       "shipped_at": "2026-10-21T01:10:01.979179+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    "rss:anthropic:claude-to-all-levels-of-government": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude to all levels of government",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-28T01:56:44.344631+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/expanding-partnership-gsa"
     },
     "rss:anthropic:claude-to-upgrade-operations-and-improve-clien": {
       "aa_model_id": null,
@@ -1825,6 +1851,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/pacing-model-development-cyber-capabilities"
     },
+    "rss:openai:retell-uses-openai-models-to-help-power-100m-monthly-calls": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Retell uses OpenAI models to help power 100M monthly calls",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-28T01:56:41.888478+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/retell-ai"
+    },
     "rss:openai:securing-our-frontier-model-training-environment": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1932,7 +1971,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-27"
+    "date": "2026-10-28"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2633,6 +2672,9 @@
     "rss:openai:gpt-6-1-sol-helps-coderabbit-strengthen-sec",
     "rss:openai:gpt-6-1-terra",
     "rss:openai:gpt-6-and-gpt-live",
-    "rss:amazon:soci-indexed-images-for-faster-sagemaker-ai-jobs"
+    "rss:amazon:soci-indexed-images-for-faster-sagemaker-ai-jobs",
+    "rss:openai:retell-uses-openai-models-to-help-power-100m-monthly-calls",
+    "rss:anthropic:claude-to-all-levels-of-government",
+    "rss:amazon:fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock"
   ]
 }
