@@ -1799,6 +1799,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     },
+    "rss:openai:how-we-detect-frontier-model-misalignment": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "How we detect frontier model misalignment",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-29T17:13:23.789715+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+    },
     "rss:openai:intelligence-age": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1996,7 +2009,7 @@
     }
   },
   "posts_today": {
-    "count": 2,
+    "count": 3,
     "date": "2026-10-29"
   },
   "seeded": true,
@@ -2703,6 +2716,7 @@
     "rss:anthropic:claude-to-all-levels-of-government",
     "rss:amazon:fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock",
     "rss:google:gemini-4-carbon",
-    "rss:amazon:exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-custom"
+    "rss:amazon:exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-custom",
+    "rss:openai:how-we-detect-frontier-model-misalignment"
   ]
 }
