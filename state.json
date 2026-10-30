@@ -343,6 +343,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/mistralai/LIDstral-Arabic"
     },
+    "hf:mistralai/Mistral-Large-4-1T-A52B-NVFP4": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "mistral",
+      "name": "Mistral Large 4 1T A52B NVFP4",
+      "open_closed": "open",
+      "shipped_at": "2026-10-30T01:27:49.286252+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4"
+    },
     "hf:mistralai/Timestral-123M": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -394,6 +407,19 @@
       "shipped_at": "2026-10-15T17:37:08.226180+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/mistralai/Timestral-5M"
+    },
+    "rss:amazon:accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hy": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Accelerate agentic AI with NVIDIA Nemotron models on Amazon EKS and SageMaker Hy",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-30T01:27:46.832992+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/"
     },
     "rss:amazon:accessing-openai-models-on-amazon-bedrock-from-australia-with-global-cross-regio": {
       "aa_model_id": null,
@@ -1513,6 +1539,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/amp-beyond-coding"
     },
+    "rss:openai:an-updated-model-spec-for-more-capable-and-beneficial-ai": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "An updated Model Spec for more capable and beneficial AI",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-30T01:27:44.461428+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/updated-model-spec"
+    },
     "rss:openai:astra-for-law": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2010,7 +2049,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-10-29"
+    "date": "2026-10-30"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2717,6 +2756,9 @@
     "rss:amazon:fix-evaluation-bias-to-unlock-better-models-on-amazon-bedrock",
     "rss:google:gemini-4-carbon",
     "rss:amazon:exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-custom",
-    "rss:openai:how-we-detect-frontier-model-misalignment"
+    "rss:openai:how-we-detect-frontier-model-misalignment",
+    "rss:openai:an-updated-model-spec-for-more-capable-and-beneficial-ai",
+    "rss:amazon:accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hy",
+    "hf:mistralai/Mistral-Large-4-1T-A52B-NVFP4"
   ]
 }
