@@ -226,6 +226,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/Sentiment-Analysis-7B"
     },
+    "hf:microsoft/UserLM-2.0": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "UserLM 2.0",
+      "open_closed": "closed",
+      "shipped_at": "2026-10-31T02:35:55.302185+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/UserLM-2.0"
+    },
     "hf:microsoft/bioemu2": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2048,8 +2061,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-10-30"
+    "count": 1,
+    "date": "2026-10-31"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2759,6 +2772,7 @@
     "rss:openai:how-we-detect-frontier-model-misalignment",
     "rss:openai:an-updated-model-spec-for-more-capable-and-beneficial-ai",
     "rss:amazon:accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hy",
-    "hf:mistralai/Mistral-Large-4-1T-A52B-NVFP4"
+    "hf:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+    "hf:microsoft/UserLM-2.0"
   ]
 }
