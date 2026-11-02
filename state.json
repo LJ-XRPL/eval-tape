@@ -1019,6 +1019,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/custom-reward-functions-for-multi-turn-reinforcement-learning-with-amazon-nova-forge/"
     },
+    "rss:amazon:nova-multimodal-embeddings-and-amazon-bedroc": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Nova Multimodal Embeddings and Amazon Bedroc",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-02T20:27:29.628745+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/agentic-engineering-intelligence-with-amazon-nova-multimodal-embeddings-and-amazon-bedrock-agentcore/"
+    },
     "rss:amazon:nova-sonic": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2033,6 +2046,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/australian-youth-safety-blueprint"
     },
+    "rss:openai:the-grid-protectors-program": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "the Grid Protectors Program",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-02T20:27:26.336385+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/grid-protectors-program"
+    },
     "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2061,8 +2087,8 @@
     }
   },
   "posts_today": {
-    "count": 1,
-    "date": "2026-10-31"
+    "count": 2,
+    "date": "2026-11-02"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2773,6 +2799,8 @@
     "rss:openai:an-updated-model-spec-for-more-capable-and-beneficial-ai",
     "rss:amazon:accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hy",
     "hf:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
-    "hf:microsoft/UserLM-2.0"
+    "hf:microsoft/UserLM-2.0",
+    "rss:openai:the-grid-protectors-program",
+    "rss:amazon:nova-multimodal-embeddings-and-amazon-bedroc"
   ]
 }
