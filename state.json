@@ -1500,6 +1500,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/"
     },
+    "rss:kimi:india-based-inference-for-kimi-k3-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "kimi",
+      "name": "India-based inference for Kimi K3 on Amazon Bedrock",
+      "open_closed": "open",
+      "shipped_at": "2026-11-03T17:27:36.620854+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-india-based-inference-for-kimi-k3-on-amazon-bedrock/"
+    },
     "rss:kimi:kimi-k3-on-amazon-bedrock": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2087,8 +2100,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-11-02"
+    "count": 1,
+    "date": "2026-11-03"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2801,6 +2814,7 @@
     "hf:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
     "hf:microsoft/UserLM-2.0",
     "rss:openai:the-grid-protectors-program",
-    "rss:amazon:nova-multimodal-embeddings-and-amazon-bedroc"
+    "rss:amazon:nova-multimodal-embeddings-and-amazon-bedroc",
+    "rss:kimi:india-based-inference-for-kimi-k3-on-amazon-bedrock"
   ]
 }
