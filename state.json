@@ -200,6 +200,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/FrogNano-4B-2609"
     },
+    "hf:microsoft/OptiMind-RL": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "OptiMind RL",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-04T23:01:39.122152+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/OptiMind-RL"
+    },
     "hf:microsoft/SQuadGen": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1148,6 +1161,19 @@
       "shipped_at": "2026-09-14T19:54:17.270331+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/"
+    },
+    "rss:amazon:use-decision-models-with-amazon-bedrock-agentcore-evaluations": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Use decision models with Amazon Bedrock AgentCore Evaluations",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-04T23:01:35.676334+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/"
     },
     "rss:amazon:use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock": {
       "aa_model_id": null,
@@ -2113,7 +2139,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-11-04"
   },
   "seeded": true,
@@ -2829,6 +2855,8 @@
     "rss:openai:the-grid-protectors-program",
     "rss:amazon:nova-multimodal-embeddings-and-amazon-bedroc",
     "rss:kimi:india-based-inference-for-kimi-k3-on-amazon-bedrock",
-    "rss:openai:daybreak-red-is-now-available-in-aws-govcloud-us-east"
+    "rss:openai:daybreak-red-is-now-available-in-aws-govcloud-us-east",
+    "rss:amazon:use-decision-models-with-amazon-bedrock-agentcore-evaluations",
+    "hf:microsoft/OptiMind-RL"
   ]
 }
