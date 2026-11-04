@@ -1643,6 +1643,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-chatgpt-images-2-5"
     },
+    "rss:openai:daybreak-red-is-now-available-in-aws-govcloud-us-east": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-04T17:40:42.637428+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/daybreak-red-aws-govcloud"
+    },
     "rss:openai:disrupting-a-coordinated-model-distillation-campaign": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2101,7 +2114,7 @@
   },
   "posts_today": {
     "count": 1,
-    "date": "2026-11-03"
+    "date": "2026-11-04"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2815,6 +2828,7 @@
     "hf:microsoft/UserLM-2.0",
     "rss:openai:the-grid-protectors-program",
     "rss:amazon:nova-multimodal-embeddings-and-amazon-bedroc",
-    "rss:kimi:india-based-inference-for-kimi-k3-on-amazon-bedrock"
+    "rss:kimi:india-based-inference-for-kimi-k3-on-amazon-bedrock",
+    "rss:openai:daybreak-red-is-now-available-in-aws-govcloud-us-east"
   ]
 }
