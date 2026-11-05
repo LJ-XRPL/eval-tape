@@ -1500,6 +1500,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/"
     },
+    "rss:google:gemini-omni-1-2-flash": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini Omni 1.2 Flash",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-05T19:22:02.830595+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
     "rss:google:synthid-bio": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2152,7 +2165,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 2,
     "date": "2026-11-05"
   },
   "seeded": true,
@@ -2871,6 +2884,7 @@
     "rss:openai:daybreak-red-is-now-available-in-aws-govcloud-us-east",
     "rss:amazon:use-decision-models-with-amazon-bedrock-agentcore-evaluations",
     "hf:microsoft/OptiMind-RL",
-    "rss:openai:images-2-6"
+    "rss:openai:images-2-6",
+    "rss:google:gemini-omni-1-2-flash"
   ]
 }
