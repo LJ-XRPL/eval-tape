@@ -1929,6 +1929,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
     },
+    "rss:openai:images-2-6": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Images 2.6",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-05T03:36:15.442248+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-images-2-6"
+    },
     "rss:openai:intelligence-age": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2139,8 +2152,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-11-04"
+    "count": 1,
+    "date": "2026-11-05"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2857,6 +2870,7 @@
     "rss:kimi:india-based-inference-for-kimi-k3-on-amazon-bedrock",
     "rss:openai:daybreak-red-is-now-available-in-aws-govcloud-us-east",
     "rss:amazon:use-decision-models-with-amazon-bedrock-agentcore-evaluations",
-    "hf:microsoft/OptiMind-RL"
+    "hf:microsoft/OptiMind-RL",
+    "rss:openai:images-2-6"
   ]
 }
