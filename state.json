@@ -642,6 +642,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws/"
     },
+    "rss:amazon:claude-fable-5-2-on-aws": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Claude Fable 5.2 on AWS",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-09T21:13:16.930306+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/"
+    },
     "rss:amazon:claude-haiku-5-5-on-aws": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1227,6 +1240,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
     },
+    "rss:anthropic:claude-fable-5-2-and-claude-mythos-5-2": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Claude Fable 5.2 and Claude Mythos 5.2",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-09T21:13:14.012213+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
     "rss:anthropic:claude-haiku-5-5": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1668,6 +1694,19 @@
       "shipped_at": "2026-09-17T21:34:34.243035+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/astra-for-law"
+    },
+    "rss:openai:chatgpt-enterprise-now-available-in-aws-marketplace": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "ChatGPT Enterprise now available in AWS Marketplace",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-09T21:13:10.900305+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
     },
     "rss:openai:chatgpt-for-financial-services": {
       "aa_model_id": null,
@@ -2191,8 +2230,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-11-06"
+    "count": 3,
+    "date": "2026-11-09"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2913,6 +2952,9 @@
     "rss:openai:images-2-6",
     "rss:google:gemini-omni-1-2-flash",
     "rss:amazon:sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization",
-    "rss:amazon:claude-code-to-remote-sessions-on-amazon-bedro"
+    "rss:amazon:claude-code-to-remote-sessions-on-amazon-bedro",
+    "rss:openai:chatgpt-enterprise-now-available-in-aws-marketplace",
+    "rss:anthropic:claude-fable-5-2-and-claude-mythos-5-2",
+    "rss:amazon:claude-fable-5-2-on-aws"
   ]
 }
