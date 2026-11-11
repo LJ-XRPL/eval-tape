@@ -1240,6 +1240,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/"
     },
+    "rss:anthropic:anthropic-launches-roadshow-for-proposed-initial-public-offering": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "anthropic",
+      "name": "Anthropic launches roadshow for proposed initial public offering",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-11T00:08:37.386375+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://www.anthropic.com/news/roadshow-launch"
+    },
     "rss:anthropic:claude-discovers-a-novel-enzyme-system-with-cr": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1552,6 +1565,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
     },
+    "rss:google:gemini-intelligence": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini Intelligence",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-11T00:08:40.570064+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
+    },
     "rss:google:gemini-omni-1-1-flash-lets-you-build-with-more": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1707,6 +1733,19 @@
       "shipped_at": "2026-09-17T21:34:34.243035+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/astra-for-law"
+    },
+    "rss:openai:businesses-in-chatgpt": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Businesses in ChatGPT",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-11T00:08:33.873114+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-businesses-chatgpt"
     },
     "rss:openai:chatgpt-enterprise-now-available-in-aws-marketplace": {
       "aa_model_id": null,
@@ -2270,7 +2309,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-10"
+    "date": "2026-11-11"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -2997,6 +3036,9 @@
     "rss:amazon:claude-fable-5-2-on-aws",
     "rss:openai:control-room-a-central-system-to-track-and-stop-model-workloads-across-our-rese",
     "rss:openai:coderabbit-scales-agentic-software-development-and-ships-20x-more",
-    "rss:amazon:nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart"
+    "rss:amazon:nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart",
+    "rss:openai:businesses-in-chatgpt",
+    "rss:anthropic:anthropic-launches-roadshow-for-proposed-initial-public-offering",
+    "rss:google:gemini-intelligence"
   ]
 }
