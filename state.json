@@ -1552,6 +1552,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
     },
+    "rss:google:gemini-4-carbon-is-now-available": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 4 Carbon is now available",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-12T02:37:56.225694+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1564,6 +1577,32 @@
       "shipped_at": "2026-08-17T08:33:47.842268+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
+    },
+    "rss:google:gemini-decisions-api": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini Decisions API",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-12T02:37:48.677831+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    "rss:google:gemini-for-healthcare": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini for healthcare",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-12T02:37:52.463709+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
     },
     "rss:google:gemini-intelligence": {
       "aa_model_id": null,
@@ -2309,7 +2348,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-11"
+    "date": "2026-11-12"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3039,6 +3078,9 @@
     "rss:amazon:nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart",
     "rss:openai:businesses-in-chatgpt",
     "rss:anthropic:anthropic-launches-roadshow-for-proposed-initial-public-offering",
-    "rss:google:gemini-intelligence"
+    "rss:google:gemini-intelligence",
+    "rss:google:gemini-decisions-api",
+    "rss:google:gemini-for-healthcare",
+    "rss:google:gemini-4-carbon-is-now-available"
   ]
 }
