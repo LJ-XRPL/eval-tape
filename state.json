@@ -1422,6 +1422,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/"
     },
+    "rss:google:alphaproof-code": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "AlphaProof Code",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-13T04:12:55.555001+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+    },
     "rss:google:gemini-3-5-transcribe": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1564,6 +1577,19 @@
       "shipped_at": "2026-11-12T02:37:56.225694+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    },
+    "rss:google:gemini-4-hydrogen": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 4 Hydrogen",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-13T04:12:53.409425+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
     },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
@@ -2111,6 +2137,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
     },
+    "rss:openai:how-amplitude-ships-product-improvements-in-1-2-days-with-openai": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "How Amplitude ships product improvements in 1\u20132 days with OpenAI",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-13T04:12:51.231607+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/business/customer-stories/amplitude"
+    },
     "rss:openai:how-we-detect-frontier-model-misalignment": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2348,7 +2387,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-12"
+    "date": "2026-11-13"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3081,6 +3120,9 @@
     "rss:google:gemini-intelligence",
     "rss:google:gemini-decisions-api",
     "rss:google:gemini-for-healthcare",
-    "rss:google:gemini-4-carbon-is-now-available"
+    "rss:google:gemini-4-carbon-is-now-available",
+    "rss:openai:how-amplitude-ships-product-improvements-in-1-2-days-with-openai",
+    "rss:google:gemini-4-hydrogen",
+    "rss:google:alphaproof-code"
   ]
 }
