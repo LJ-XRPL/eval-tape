@@ -126,7 +126,7 @@ def fetch_aa_models(
         return parse_aa_payload({"data": (state.get("aa_cache") or {}).get("data") or []})
 
     session = session or requests.Session()
-    resp = session.get(AA_API_URL, headers={"x-api-key": api_key}, timeout=60)
+    resp = session.get(AA_API_URL, headers={"x-api-key": api_key}, timeout=15)
     resp.raise_for_status()
     payload = resp.json()
     data = payload.get("data") or []
