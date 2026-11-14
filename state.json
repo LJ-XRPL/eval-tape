@@ -1669,6 +1669,32 @@
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
     },
+    "rss:google:gemini-robotics-2-5-accelerates-real-world-gen": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini Robotics 2.5 accelerates real-world gen",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-14T00:35:09.969377+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+    },
+    "rss:google:opening-the-datasets-behind-our-ai-weather-models": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Opening the datasets behind our AI weather models",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-14T00:35:07.150738+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/"
+    },
     "rss:google:synthid-bio": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1863,6 +1889,19 @@
       "shipped_at": "2026-09-09T01:20:47.742914+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-chatgpt-images-2-5"
+    },
+    "rss:openai:chatgpt-wallet": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "ChatGPT Wallet",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-14T00:35:04.291971+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-chatgpt-wallet"
     },
     "rss:openai:coderabbit-scales-agentic-software-development-and-ships-20x-more": {
       "aa_model_id": null,
@@ -2387,7 +2426,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-13"
+    "date": "2026-11-14"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3123,6 +3162,9 @@
     "rss:google:gemini-4-carbon-is-now-available",
     "rss:openai:how-amplitude-ships-product-improvements-in-1-2-days-with-openai",
     "rss:google:gemini-4-hydrogen",
-    "rss:google:alphaproof-code"
+    "rss:google:alphaproof-code",
+    "rss:openai:chatgpt-wallet",
+    "rss:google:opening-the-datasets-behind-our-ai-weather-models",
+    "rss:google:gemini-robotics-2-5-accelerates-real-world-gen"
   ]
 }
