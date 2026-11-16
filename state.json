@@ -1812,6 +1812,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/"
     },
+    "rss:openai:a-step-toward-defining-the-standard-model-on-a-lattice": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "A step toward defining the Standard Model on a lattice",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-16T01:31:04.614480+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/step-toward-defining-the-standard-model"
+    },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2464,8 +2477,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-11-15"
+    "count": 1,
+    "date": "2026-11-16"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3207,6 +3220,7 @@
     "rss:google:gemini-robotics-2-5-accelerates-real-world-gen",
     "rss:amazon:route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nem",
     "rss:amazon:build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture",
-    "rss:amazon:deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron"
+    "rss:amazon:deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron",
+    "rss:openai:a-step-toward-defining-the-standard-model-on-a-lattice"
   ]
 }
