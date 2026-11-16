@@ -1279,6 +1279,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/use-open-weight-models-as-your-ai-coding-agent-with-amazon-bedrock/"
     },
+    "rss:amazon:use-prompt-caching-with-open-weight-models-on-amazon-bedrock": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Use prompt caching with open-weight models on Amazon Bedrock",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-16T18:45:37.012821+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/use-prompt-caching-with-open-weight-models-on-amazon-bedrock/"
+    },
     "rss:anthropic:anthropic-launches-roadshow-for-proposed-initial-public-offering": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2449,6 +2462,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/grid-protectors-program"
     },
+    "rss:openai:the-king-s-trust-and-openai-launch-1m-partnership": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "The King\u2019s Trust and OpenAI launch \u00a31m partnership",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-16T18:45:33.364514+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/the-kings-trust-and-openai"
+    },
     "rss:qwen:qwen3-8-2-4t-a95b-on-amazon-sagemaker-hyperp": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2477,7 +2503,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-11-16"
   },
   "seeded": true,
@@ -3221,6 +3247,8 @@
     "rss:amazon:route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nem",
     "rss:amazon:build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture",
     "rss:amazon:deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron",
-    "rss:openai:a-step-toward-defining-the-standard-model-on-a-lattice"
+    "rss:openai:a-step-toward-defining-the-standard-model-on-a-lattice",
+    "rss:openai:the-king-s-trust-and-openai-launch-1m-partnership",
+    "rss:amazon:use-prompt-caching-with-open-weight-models-on-amazon-bedrock"
   ]
 }
