@@ -1734,6 +1734,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
     },
+    "rss:google:gemini-to-work-for-you": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini to work for you",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-17T19:30:20.771863+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+    },
     "rss:google:opening-the-datasets-behind-our-ai-weather-models": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2150,6 +2163,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
     },
+    "rss:openai:gpt-6-2-astra-and-sol": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6.2 Astra and Sol",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-17T19:30:14.326818+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
     "rss:openai:gpt-6-and-gpt-live": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2318,6 +2344,19 @@
       "shipped_at": "2026-08-19T17:20:00.092977+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/our-commitment-to-zero-data-retention"
+    },
+    "rss:openai:openai-for-chile": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "OpenAI for Chile",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-17T19:30:17.561919+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-openai-for-chile"
     },
     "rss:openai:openai-models-are-coming-to-google-cloud": {
       "aa_model_id": null,
@@ -2504,7 +2543,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-16"
+    "date": "2026-11-17"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3249,6 +3288,9 @@
     "rss:amazon:deploy-frontier-ai-models-on-aws-trainium-with-sglang-neuron",
     "rss:openai:a-step-toward-defining-the-standard-model-on-a-lattice",
     "rss:openai:the-king-s-trust-and-openai-launch-1m-partnership",
-    "rss:amazon:use-prompt-caching-with-open-weight-models-on-amazon-bedrock"
+    "rss:amazon:use-prompt-caching-with-open-weight-models-on-amazon-bedrock",
+    "rss:openai:gpt-6-2-astra-and-sol",
+    "rss:openai:openai-for-chile",
+    "rss:google:gemini-to-work-for-you"
   ]
 }
