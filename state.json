@@ -460,6 +460,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference/"
     },
+    "rss:amazon:ai-data-preparation-capabilities-in-amazon-sagemaker": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "AI data preparation capabilities in Amazon SageMaker",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-18T01:50:38.711558+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-ai-data-preparation-capabilities-in-amazon-sagemaker-build-high-quality-datasets-for-model-development-workflows/"
+    },
     "rss:amazon:amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -758,6 +771,19 @@
       "shipped_at": "2026-08-21T00:45:32.291713+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock/"
+    },
+    "rss:amazon:cut-generative-ai-costs-code-for-rules-models-for-judgment": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Cut generative AI costs: Code for rules, models for judgment",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-18T01:50:35.739724+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/cut-generative-ai-costs-code-for-rules-models-for-judgment/"
     },
     "rss:amazon:deploy-and-evaluate-models-with-amazon-sagemaker-jumpstart": {
       "aa_model_id": null,
@@ -1942,6 +1968,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/introducing-chatgpt-financial-services"
     },
+    "rss:openai:chatgpt-for-sales": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "ChatGPT for Sales",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-18T01:50:32.751243+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/introducing-chatgpt-for-sales"
+    },
     "rss:openai:chatgpt-for-teens": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2543,7 +2582,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-17"
+    "date": "2026-11-18"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3291,6 +3330,9 @@
     "rss:amazon:use-prompt-caching-with-open-weight-models-on-amazon-bedrock",
     "rss:openai:gpt-6-2-astra-and-sol",
     "rss:openai:openai-for-chile",
-    "rss:google:gemini-to-work-for-you"
+    "rss:google:gemini-to-work-for-you",
+    "rss:openai:chatgpt-for-sales",
+    "rss:amazon:cut-generative-ai-costs-code-for-rules-models-for-judgment",
+    "rss:amazon:ai-data-preparation-capabilities-in-amazon-sagemaker"
   ]
 }
