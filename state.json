@@ -1669,6 +1669,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
     },
+    "rss:google:gemini-4-neon": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini 4 Neon",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-19T00:37:59.045691+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+    },
     "rss:google:gemini-and-pixel": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1681,6 +1694,19 @@
       "shipped_at": "2026-08-17T08:33:47.842268+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/"
+    },
+    "rss:google:gemini-app-is-now-available-on-lower-memory-an": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini app is now available on lower-memory An",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-19T00:37:55.871085+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
     },
     "rss:google:gemini-decisions-api": {
       "aa_model_id": null,
@@ -1876,6 +1902,19 @@
       "shipped_at": "2026-11-16T01:31:04.614480+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/step-toward-defining-the-standard-model"
+    },
+    "rss:openai:advancing-chip-design-with-openai-models": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "Advancing chip design with OpenAI models",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-19T00:37:52.677460+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/advancing-chip-design-with-our-models"
     },
     "rss:openai:ai-futures": {
       "aa_model_id": null,
@@ -2582,7 +2621,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-18"
+    "date": "2026-11-19"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3333,6 +3372,9 @@
     "rss:google:gemini-to-work-for-you",
     "rss:openai:chatgpt-for-sales",
     "rss:amazon:cut-generative-ai-costs-code-for-rules-models-for-judgment",
-    "rss:amazon:ai-data-preparation-capabilities-in-amazon-sagemaker"
+    "rss:amazon:ai-data-preparation-capabilities-in-amazon-sagemaker",
+    "rss:openai:advancing-chip-design-with-openai-models",
+    "rss:google:gemini-app-is-now-available-on-lower-memory-an",
+    "rss:google:gemini-4-neon"
   ]
 }
