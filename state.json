@@ -512,6 +512,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/"
     },
+    "rss:amazon:amazon-sagemaker-inference-2026-launches-in-review-part-2": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-20T04:57:11.867331+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/"
+    },
     "rss:amazon:amazon-sagemaker-inference-2026-year-to-date-launches-in-review": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1799,6 +1812,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
     },
+    "rss:google:genie-4-is-now-available": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Genie 4 is now available",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-20T04:57:09.615405+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://deepmind.google/blog/genie-4-is-now-available/"
+    },
     "rss:google:opening-the-datasets-behind-our-ai-weather-models": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -1824,6 +1850,19 @@
       "shipped_at": "2026-10-01T00:17:14.589945+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://deepmind.google/blog/introducing-synthid-bio/"
+    },
+    "rss:google:tool-retrieval-in-the-gemini-api": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Tool Retrieval in the Gemini API",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-20T04:57:07.430163+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
     },
     "rss:google:weathernext-3": {
       "aa_model_id": null,
@@ -2621,7 +2660,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-19"
+    "date": "2026-11-20"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3375,6 +3414,9 @@
     "rss:amazon:ai-data-preparation-capabilities-in-amazon-sagemaker",
     "rss:openai:advancing-chip-design-with-openai-models",
     "rss:google:gemini-app-is-now-available-on-lower-memory-an",
-    "rss:google:gemini-4-neon"
+    "rss:google:gemini-4-neon",
+    "rss:google:tool-retrieval-in-the-gemini-api",
+    "rss:google:genie-4-is-now-available",
+    "rss:amazon:amazon-sagemaker-inference-2026-launches-in-review-part-2"
   ]
 }
