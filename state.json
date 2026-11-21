@@ -499,6 +499,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-is-now-generally-available-on-desktop/"
     },
+    "rss:amazon:amazon-sagemaker-hyperpod-global-inference-gateway": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon SageMaker HyperPod Global Inference Gateway",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-21T02:56:35.757168+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/"
+    },
     "rss:amazon:amazon-sagemaker-hyperpod-inference-gateway": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -537,6 +550,19 @@
       "shipped_at": "2026-09-19T02:21:12.562283+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/"
+    },
+    "rss:amazon:amazon-textract-insights": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon Textract Insights",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-21T02:56:39.042249+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/"
     },
     "rss:amazon:anthropic-models-on-amazon-bedrock-for-in-region-inference-in": {
       "aa_model_id": null,
@@ -1044,6 +1070,19 @@
       "shipped_at": "2026-09-15T16:05:59.292148+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-instance-preference-lists-for-amazon-sagemaker-ai-training-jobs/"
+    },
+    "rss:amazon:managed-cluster-extensions-for-observability-and-user-managem": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "managed cluster extensions for observability and user managem",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-21T02:56:32.469378+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/"
     },
     "rss:amazon:migrating-multi-model-ai-agents-to-amazon-bedrock-agentcore-runtime": {
       "aa_model_id": null,
@@ -2660,7 +2699,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-20"
+    "date": "2026-11-21"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3417,6 +3456,9 @@
     "rss:google:gemini-4-neon",
     "rss:google:tool-retrieval-in-the-gemini-api",
     "rss:google:genie-4-is-now-available",
-    "rss:amazon:amazon-sagemaker-inference-2026-launches-in-review-part-2"
+    "rss:amazon:amazon-sagemaker-inference-2026-launches-in-review-part-2",
+    "rss:amazon:managed-cluster-extensions-for-observability-and-user-managem",
+    "rss:amazon:amazon-sagemaker-hyperpod-global-inference-gateway",
+    "rss:amazon:amazon-textract-insights"
   ]
 }
