@@ -486,6 +486,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/"
     },
+    "rss:amazon:amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "Amazon Polly launches voice cloning: A unique voice for your brand",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-22T02:45:51.438194+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/"
+    },
     "rss:amazon:amazon-quick-is-now-generally-available-on-desktop": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -862,6 +875,19 @@
       "shipped_at": "2026-09-18T16:50:37.148664+00:00",
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/"
+    },
+    "rss:amazon:enhanced-infrastructure-observability-in-amazon-sagemaker-hyp": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "enhanced infrastructure observability in Amazon SageMaker Hyp",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-22T02:45:48.680381+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-enhanced-observability-in-amazon-sagemaker-hyperpod-to-diagnose-gpu-training-issues/"
     },
     "rss:amazon:exowatt-beats-frontier-models-on-accuracy-with-sagemaker-serverless-model-custom": {
       "aa_model_id": null,
@@ -1955,6 +1981,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/"
     },
+    "rss:meta:meta-ads-is-now-available-in-aws-quick": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "meta",
+      "name": "Meta ads is now available in AWS Quick",
+      "open_closed": "open",
+      "shipped_at": "2026-11-22T02:45:45.942684+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/"
+    },
     "rss:meta:meta-s-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2699,7 +2738,7 @@
   },
   "posts_today": {
     "count": 3,
-    "date": "2026-11-21"
+    "date": "2026-11-22"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3459,6 +3498,9 @@
     "rss:amazon:amazon-sagemaker-inference-2026-launches-in-review-part-2",
     "rss:amazon:managed-cluster-extensions-for-observability-and-user-managem",
     "rss:amazon:amazon-sagemaker-hyperpod-global-inference-gateway",
-    "rss:amazon:amazon-textract-insights"
+    "rss:amazon:amazon-textract-insights",
+    "rss:meta:meta-ads-is-now-available-in-aws-quick",
+    "rss:amazon:enhanced-infrastructure-observability-in-amazon-sagemaker-hyp",
+    "rss:amazon:amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand"
   ]
 }
