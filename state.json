@@ -1370,6 +1370,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/"
     },
+    "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "the Amazon Bedrock Trusted Access API with Anthropic",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-24T13:06:44.681949+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/"
+    },
     "rss:amazon:the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-mode": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2763,8 +2776,8 @@
     }
   },
   "posts_today": {
-    "count": 2,
-    "date": "2026-11-23"
+    "count": 1,
+    "date": "2026-11-24"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3529,6 +3542,7 @@
     "rss:amazon:enhanced-infrastructure-observability-in-amazon-sagemaker-hyp",
     "rss:amazon:amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand",
     "hf:microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
-    "hf:microsoft/Aion-1.0-Instruct-2.3B"
+    "hf:microsoft/Aion-1.0-Instruct-2.3B",
+    "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic"
   ]
 }
