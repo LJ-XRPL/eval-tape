@@ -1864,6 +1864,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
     },
+    "rss:google:gemini-is-changing-the-game-for-golden-state": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "google",
+      "name": "Gemini is changing the game for Golden State",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-24T23:10:22.943106+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+    },
     "rss:google:gemini-omni-1-1-flash-lets-you-build-with-more": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2475,6 +2488,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://openai.com/index/practical-guide-building-gpt-6"
     },
+    "rss:openai:gpt-6-models-demonstrate-intrinsic-protein": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "openai",
+      "name": "GPT-6 models demonstrate intrinsic protein-",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-24T23:10:19.738771+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
     "rss:openai:gpt-6-sol-and-luna": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2776,7 +2802,7 @@
     }
   },
   "posts_today": {
-    "count": 1,
+    "count": 3,
     "date": "2026-11-24"
   },
   "seeded": true,
@@ -3543,6 +3569,8 @@
     "rss:amazon:amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand",
     "hf:microsoft/Aion-1.0-Instruct-2.3B-ONNX-WebGPU",
     "hf:microsoft/Aion-1.0-Instruct-2.3B",
-    "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic"
+    "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic",
+    "rss:openai:gpt-6-models-demonstrate-intrinsic-protein",
+    "rss:google:gemini-is-changing-the-game-for-golden-state"
   ]
 }
