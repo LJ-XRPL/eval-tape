@@ -1370,6 +1370,19 @@
       "shipped_tweet_id": null,
       "source_url": "https://aws.amazon.com/blogs/machine-learning/announcing-soci-indexed-images-for-faster-sagemaker-ai-jobs/"
     },
+    "rss:amazon:the-amazon-bedrock-trusted-access-api": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "amazon",
+      "name": "the Amazon Bedrock Trusted Access API",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-25T05:33:48.322141+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/"
+    },
     "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2802,8 +2815,8 @@
     }
   },
   "posts_today": {
-    "count": 3,
-    "date": "2026-11-24"
+    "count": 1,
+    "date": "2026-11-25"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3571,6 +3584,7 @@
     "hf:microsoft/Aion-1.0-Instruct-2.3B",
     "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic",
     "rss:openai:gpt-6-models-demonstrate-intrinsic-protein",
-    "rss:google:gemini-is-changing-the-game-for-golden-state"
+    "rss:google:gemini-is-changing-the-game-for-golden-state",
+    "rss:amazon:the-amazon-bedrock-trusted-access-api"
   ]
 }
