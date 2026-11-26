@@ -213,6 +213,45 @@
       "shipped_tweet_id": null,
       "source_url": "https://huggingface.co/microsoft/CogACT-v2-RoboDojo"
     },
+    "hf:microsoft/CogACT2-RoboDojo": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "CogACT2 RoboDojo",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-26T19:12:34.007548+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/CogACT2-RoboDojo"
+    },
+    "hf:microsoft/CogACT2-RoboTwin-Clean": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "CogACT2 RoboTwin Clean",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-26T19:12:40.155546+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/CogACT2-RoboTwin-Clean"
+    },
+    "hf:microsoft/CogACT2-RoboTwin-CleanRandom": {
+      "aa_model_id": null,
+      "aa_rank": null,
+      "aa_score": null,
+      "evals_posted_at": null,
+      "evals_tweet_id": null,
+      "lab": "microsoft",
+      "name": "CogACT2 RoboTwin CleanRandom",
+      "open_closed": "closed",
+      "shipped_at": "2026-11-26T19:12:37.084151+00:00",
+      "shipped_tweet_id": null,
+      "source_url": "https://huggingface.co/microsoft/CogACT2-RoboTwin-CleanRandom"
+    },
     "hf:microsoft/FrogNano-4B-2609": {
       "aa_model_id": null,
       "aa_rank": null,
@@ -2815,8 +2854,8 @@
     }
   },
   "posts_today": {
-    "count": 1,
-    "date": "2026-11-25"
+    "count": 3,
+    "date": "2026-11-26"
   },
   "seeded": true,
   "seeded_at": "2026-08-13T05:28:11.838876+00:00",
@@ -3585,6 +3624,9 @@
     "rss:amazon:the-amazon-bedrock-trusted-access-api-with-anthropic",
     "rss:openai:gpt-6-models-demonstrate-intrinsic-protein",
     "rss:google:gemini-is-changing-the-game-for-golden-state",
-    "rss:amazon:the-amazon-bedrock-trusted-access-api"
+    "rss:amazon:the-amazon-bedrock-trusted-access-api",
+    "hf:microsoft/CogACT2-RoboDojo",
+    "hf:microsoft/CogACT2-RoboTwin-CleanRandom",
+    "hf:microsoft/CogACT2-RoboTwin-Clean"
   ]
 }
