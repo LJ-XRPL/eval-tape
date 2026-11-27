@@ -17,6 +17,13 @@ DEFAULT_STATE: dict[str, Any] = {
     "aa_cache": {"fetched_at": None, "data": []},
     "posts_today": {"date": None, "count": 0},
     "last_tweet_ids": [],
+    "distribution": {
+        "profile_set": False,
+        "launch_pinned": False,
+        "launch_quoted_id": None,
+        "founder_quotes": 0,
+        "pinned_tweet_id": None,
+    },
 }
 
 
@@ -37,6 +44,16 @@ def load_state(path: Path | None = None) -> dict[str, Any]:
     state.setdefault("aa_cache", {"fetched_at": None, "data": []})
     state.setdefault("posts_today", {"date": None, "count": 0})
     state.setdefault("last_tweet_ids", [])
+    state.setdefault(
+        "distribution",
+        {
+            "profile_set": False,
+            "launch_pinned": False,
+            "launch_quoted_id": None,
+            "founder_quotes": 0,
+            "pinned_tweet_id": None,
+        },
+    )
     return state
 
 
